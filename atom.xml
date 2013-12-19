@@ -1,67 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[iefoay]]></title>
-  <subtitle><![CDATA[坚持]]></subtitle>
+  <subtitle><![CDATA[点点滴滴]]></subtitle>
   <link href="http://vcharts.cn/atom.xml" rel="self"/>
   <link href="http://vcharts.cn"/>
-  <updated>2013-12-10T07:23:54.075Z</updated>
+  <updated>2013-12-19T07:51:09.218Z</updated>
   <id>http://vcharts.cn/</id>
   <author>
-    <name><![CDATA[yaofei]]></name>
+    <name><![CDATA[姚飞]]></name>
     <email><![CDATA[oiue@163.com]]></email>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://vcharts.cn/2013/12/05/hello-world2/"/>
-    <id>http://vcharts.cn/2013/12/05/hello-world2/</id>
+    <title type="html"><![CDATA[flashobject]]></title>
+    <link href="http://vcharts.cn/2013/12/19/flashobject/"/>
+    <id>http://vcharts.cn/2013/12/19/flashobject/</id>
+    <published>2013-12-19T06:56:17.000Z</published>
+    <updated>2013-12-19T06:56:17.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[Windows 运行打开命令]]></title>
+    <link href="http://vcharts.cn/2013/12/13/open-command/"/>
+    <id>http://vcharts.cn/2013/12/13/open-command/</id>
+    <published>2013-12-13T08:07:44.000Z</published>
+    <updated>2013-12-19T06:41:52.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nodepad</td>
+<td>记事本</td>
+</tr>
+<tr>
+<td>calc</td>
+<td>计算器</td>
+</tr>
+<tr>
+<td>regedit</td>
+<td>注册表</td>
+</tr>
+<tr>
+<td>gpedit.msc</td>
+<td>组策略</td>
+</tr>
+<tr>
+<td>services.msc</td>
+<td>服务</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category scheme="http://vcharts.cn/tags/速查手册/" term="速查手册"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[CMD命令]]></title>
+    <link href="http://vcharts.cn/2013/12/13/cmd/"/>
+    <id>http://vcharts.cn/2013/12/13/cmd/</id>
+    <published>2013-12-13T08:02:58.000Z</published>
+    <updated>2013-12-18T08:49:36.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>d: d:\</td>
+<td>切换盘符</td>
+</tr>
+<tr>
+<td>cls</td>
+<td>清屏</td>
+</tr>
+<tr>
+<td>set</td>
+<td>查看环境变量</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category scheme="http://vcharts.cn/tags/速查手册/" term="速查手册"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[Sublime Text 快捷键]]></title>
+    <link href="http://vcharts.cn/2013/12/13/sublime text/keymap/"/>
+    <id>http://vcharts.cn/2013/12/13/sublime text/keymap/</id>
+    <published>2013-12-13T07:41:24.000Z</published>
+    <updated>2013-12-19T03:15:29.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>PC</th>
+<th>Mac</th>
+<th>说明    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl+P</td>
+<td></td>
+<td>搜索文件，支持简写路径和文件名</td>
+</tr>
+<tr>
+<td>Ctrl+R</td>
+<td></td>
+<td>跳转到方法</td>
+</tr>
+<tr>
+<td>Ctrl+F</td>
+<td></td>
+<td>查找</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+F</td>
+<td></td>
+<td>查找，替换</td>
+</tr>
+<tr>
+<td>Ctrl+H</td>
+<td></td>
+<td>查找，替换</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+G</td>
+<td></td>
+<td>跳转到行</td>
+</tr>
+<tr>
+<td>Ctrl+M</td>
+<td></td>
+<td>跳转到括号</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+/</td>
+<td></td>
+<td>注释 / 解除注释</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+/</td>
+<td></td>
+<td>块注释</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+D</td>
+<td></td>
+<td>选择单词，可重复选择</td>
+</tr>
+<tr>
+<td>Alt+F3</td>
+<td></td>
+<td>选择所有相同的词</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+点击</td>
+<td></td>
+<td>多选</td>
+</tr>
+<tr>
+<td>Shift+右键拖动</td>
+<td></td>
+<td>修改列</td>
+</tr>
+</tbody>
+</table>
+<p>前进后退切换文件</p>
+]]></content>
+    <category scheme="http://vcharts.cn/tags/快捷键/" term="快捷键"/>
+    <category scheme="http://vcharts.cn/tags/速查手册/" term="速查手册"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[Hi]]></title>
+    <link href="http://vcharts.cn/2013/12/05/hi/"/>
+    <id>http://vcharts.cn/2013/12/05/hi/</id>
     <published>2013-12-05T02:32:56.000Z</published>
-    <updated>2013-12-10T02:02:09.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="alt"></p>
-<pre><code>var chartConfig =
-    {
-        <span class="method">title:</span> {
-            <span class="method">text:</span> <span class="comment">"年度业绩"</span>
-        },
-        <span class="method">graphs:</span> [{
-            <span class="method">name:</span> <span class="comment">"部门1"</span>,
-            <span class="method">valueKey:</span> <span class="comment">"f"</span>,//对应数据中的key
-            <span class="method">type:</span> <span class="comment">"column"</span>
-        }, {
-            <span class="method">name:</span> <span class="comment">"部门2"</span>,
-            <span class="method">valueKey:</span> <span class="comment">"value2"</span>,//对应数据中的key
-            <span class="method">type:</span> <span class="comment">"column"</span>
-        }]
-    };</code></pre>
+    <updated>2013-12-13T08:59:15.000Z</updated>
+    <content type="html"><![CDATA[<h2>标题二</h2>
+<h3>标题三</h3>
+<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"favicon.png"</span> <span class="attribute">rel</span>=<span class="value">"icon"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="tag">h1</span> <span class="rules">{<span class="rule"><span class="attribute">float</span>:<span class="value">left;</span></span><span class="rule">}</span></span>
+<span class="class">.c</span> <span class="rules">{<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>px;</span></span><span class="rule">}</span></span>
+</pre></td></tr></table></figure>
+
+<p><code>afds</code></p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>static <span class="keyword">const</span> a:Object = <span class="number">4</span>;<span class="comment">//wifej</span>
+<span class="comment">/*
+private var ss:String = 35;
+var a:Event = 12;*/</span>
+console.log(a);
+<span class="keyword">var</span> a = <span class="number">12</span>;
+console.log(a);
+</pre></td></tr></table></figure>
+
 <a id="more"></a>
 
-<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="alt"></p>
 <p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="alt"></p>
-<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="alt"></p>
+<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="说明" title="sdjf"><br>AAAA</p>
 ]]></content>
+    <category scheme="http://vcharts.cn/tags/qfew/" term="qfew"/>
+    <category scheme="http://vcharts.cn/tags/aa/" term="aa"/>
+    <category scheme="http://vcharts.cn/tags/ww/" term="ww"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
     <link href="http://vcharts.cn/2013/12/05/hello-world/"/>
     <id>http://vcharts.cn/2013/12/05/hello-world/</id>
     <published>2013-12-05T02:32:56.000Z</published>
-    <updated>2013-12-06T09:10:39.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="alt"><br>sd<br>fsa<br>df<br>asdf<br>sda<br>f</p>
+    <updated>2013-12-19T02:45:53.000Z</updated>
+    <content type="html"><![CDATA[<h2>标题二</h2>
+<h3>标题三</h3>
+<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"favicon.png"</span> <span class="attribute">rel</span>=<span class="value">"icon"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<pre><code><span class="tag">h1</span> <span class="rules">{<span class="rule"><span class="attribute">float</span>:<span class="value">left;</span></span><span class="rule">}</span></span>
+<span class="class">.c</span> <span class="rules">{<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>px;</span></span><span class="rule">}</span></span></code></pre>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="tag">h1</span> <span class="rules">{<span class="rule"><span class="attribute">float</span>:<span class="value">left;</span></span><span class="rule">}</span></span>
+<span class="class">.c</span> <span class="rules">{<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>px;</span></span><span class="rule">}</span></span>
+</pre></td></tr></table></figure>
+
+<p><code>afds</code></p>
+<figure class="highlight lang-js"><figcaption><span>asdfs</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>static <span class="keyword">const</span> a:Object = <span class="number">4</span>;<span class="comment">//wifej</span>
+<span class="comment">/*
+private var ss:String = 35;
+var a:Event = 12;*/</span>
+console.log(a);
+<span class="keyword">var</span> a = <span class="number">12</span>;
+console.log(a);
+</pre></td></tr></table></figure>
+
 <a id="more"></a>
 
 <p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="alt"><br>asfdsa</p>
-<p>asd<br>f<br>asdf<br>sa<br>fa</p>
-<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="alt"></p>
-<p>ksdfjakjfoewijoifjwofjo;w</p>
-<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="alt"></p>
-<p>sfdsfasdf<br>sdafs<br>dafs<br>d<br>fsadfas</p>
+<p>![说明](<a href="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" target="_blank">http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578</a> sdjf)<br>asfdsa</p>
 ]]></content>
     <category scheme="http://vcharts.cn/tags/qfew/" term="qfew"/>
     <category scheme="http://vcharts.cn/tags/aa/" term="aa"/>

@@ -1,0 +1,31 @@
+/* table tr:nth-child(2n) {
+  background: #f9f9f9;
+} */
+
+table {
+  width: auto;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  /*border-spacing: 0;*/
+}
+table th {
+  text-align: center;
+  /*font-weight: bold;*/
+}
+table th, 
+table td {
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+}
+
+figure.highlight table{
+  width: auto;
+  border-collapse: separate;
+  border-style: none;
+}
+figure.highlight table th, 
+figure.highlight table td {
+  border-style: none;
+  padding: 0;
+  text-align: inherit;
+}
