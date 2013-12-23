@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>关于 | iefoay</title>
+  <title>Flash Player 全局安全设置 | iefoay</title>
   <meta name="author" content="姚飞">
   
   <meta name="description" content="前端开发 Web SVG VML">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="关于"/>
+  <meta property="og:title" content="Flash Player 全局安全设置"/>
   <meta property="og:site_name" content="iefoay"/>
 
   
@@ -51,25 +51,59 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
       
+        <div class="icon"></div>
+        <time datetime="2013-12-19T10:02:14.000Z"><a href="/2013/12/flashplayer-security/">2013-12-19</a></time>
+      
       
   
-    <h1 class="title">关于</h1>
+    <h1 class="title">Flash Player 全局安全设置</h1>
   
 
     </header>
     <div class="entry">
       
-        <h2>姚飞</h2>
-<p>致力于前端开发<br>数据图形化研究<br>艺术氛围</p>
-<h2>关于博客名称</h2>
-<p>名字yaofei当作域名，com和cn都被注册了，于是就反过来写成了iefoay，cn更中国风一些。</p>
-<h2>联系我</h2>
-<p>新浪微博：<a href="http://weibo.com/1452085277" target="_blank">@VCharts</a><br>QQ：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=53252837&amp;site=qq&amp;menu=yes" target="_blank">53252837</a><br>邮箱：<a href="mailto:oiue@163.com">oiue@163.com</a></p>
+        <p>我们在本地环境测试时，flash中请求远程接口会受阻。这是由于受到了安全沙箱限制。通过添加信任位置，可通过此限制。</p>
+<p><p id="flashinfo"></p></p>
+<script type="text/javascript">var a=swfobject.ua.pv;if(a[0]){var info=a[0];}else{info='<b>此浏览器居然没有安装 Flash Player插件！！</b>';}$('<strong>此浏览器使用的 Flash Player 版本：'+a.join('.')+'</strong>').appendTo('#flashinfo');</script>
+
+<p>首先，在flashplayer区域中，点击右键 - <strong>全局设置</strong>。由于不同的插件版本，这时会有两种情况出现。</p>
+<ul>
+<li>跳转到 <a href="http://www.macromedia.com/support/documentation/cn/flashplayer/help/settings_manager04.html" target="_blank">官方的设置页</a></li>
+<li>弹出 <strong>Flash Player 设置管理器</strong> 面板</li>
+</ul>
+<p>根据自己的出现的情况查看下面的图解即可<br><a id="more"></a></p>
+<h2>通过官方的设置页</h2>
+<p>此页面在国内访问可能有点慢，耐心等待一下。右边有个设置管理器面板，是flash内容，如果没安装插件会提示你安装。</p>
+<ol>
+<li><p>确认自己在 <strong>“全局安全设置”面板</strong> 的标签。<br><img src="img/flashplayer/flashplayer_web1.png" alt="设置面板"></p>
+</li>
+<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>编辑多个位置</strong> 右边的下拉三角，选择 <strong>添加位置</strong><br><img src="img/flashplayer/flashplayer_web2.png" alt="设置面板"></p>
+</li>
+<li><p>选择 <strong>浏览文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="img/flashplayer/flashplayer_web3.png" alt="设置面板"></p>
+</li>
+<li><p>看到信任位置已经添加成功。</p>
+</li>
+<li><p>刷新刚才的包涵flash的页面。</p>
+</li>
+</ol>
+<h2>通过 Flash Player 设置管理器</h2>
+<ol>
+<li><p>点击 <strong>高级</strong> 标签。找到 <strong>受信任位置设置</strong> ，在稍下面的位置，可能需要一下滚动条才能看到 :)<br><img src="img/flashplayer/flashplayer_1.png" alt="设置面板"></p>
+</li>
+<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>添加</strong><br><img src="img/flashplayer/flashplayer_2.png" alt="设置面板"></p>
+</li>
+<li><p>选择 <strong>添加文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="img/flashplayer/flashplayer_3.png" alt="设置面板"></p>
+</li>
+<li><p>看到信任位置已经添加成功。</p>
+</li>
+<li><p>刷新刚才的包涵flash的页面。</p>
+</li>
+</ol>
 
       
     </div>
@@ -77,6 +111,11 @@
       
         
         
+  
+  <div class="tags">
+    <a href="/tags/flash/">flash</a>, <a href="/tags/flashplayer/">flashplayer</a>, <a href="/tags/安全/">安全</a>, <a href="/tags/本地/">本地</a>
+  </div>
+
         
 
 	<!-- Baidu Button BEGIN -->

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[点点滴滴]]></subtitle>
   <link href="http://vcharts.cn/atom.xml" rel="self"/>
   <link href="http://vcharts.cn"/>
-  <updated>2013-12-19T07:51:09.218Z</updated>
+  <updated>2013-12-20T10:26:54.635Z</updated>
   <id>http://vcharts.cn/</id>
   <author>
     <name><![CDATA[姚飞]]></name>
@@ -12,19 +12,76 @@
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[Flash Player 全局安全设置]]></title>
+    <link href="http://vcharts.cn/2013/12/flashplayer-security/"/>
+    <id>http://vcharts.cn/2013/12/flashplayer-security/</id>
+    <published>2013-12-19T10:02:14.000Z</published>
+    <updated>2013-12-20T10:23:25.000Z</updated>
+    <content type="html"><![CDATA[<p>我们在本地环境测试时，flash中请求远程接口会受阻。这是由于受到了安全沙箱限制。通过添加信任位置，可通过此限制。</p>
+<p><p id="flashinfo"></p></p>
+<script type="text/javascript">var a=swfobject.ua.pv;if(a[0]){var info=a[0];}else{info='<b>此浏览器居然没有安装 Flash Player插件！！</b>';}$('<strong>此浏览器使用的 Flash Player 版本：'+a.join('.')+'</strong>').appendTo('#flashinfo');</script>
+
+<p>首先，在flashplayer区域中，点击右键 - <strong>全局设置</strong>。由于不同的插件版本，这时会有两种情况出现。</p>
+<ul>
+<li>跳转到 <a href="http://www.macromedia.com/support/documentation/cn/flashplayer/help/settings_manager04.html" target="_blank">官方的设置页</a></li>
+<li>弹出 <strong>Flash Player 设置管理器</strong> 面板</li>
+</ul>
+<p>根据自己的出现的情况查看下面的图解即可<br><a id="more"></a></p>
+<h2>通过官方的设置页</h2>
+<p>此页面在国内访问可能有点慢，耐心等待一下。右边有个设置管理器面板，是flash内容，如果没安装插件会提示你安装。</p>
+<ol>
+<li><p>确认自己在 <strong>“全局安全设置”面板</strong> 的标签。<br><img src="img/flashplayer/flashplayer_web1.png" alt="设置面板"></p>
+</li>
+<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>编辑多个位置</strong> 右边的下拉三角，选择 <strong>添加位置</strong><br><img src="img/flashplayer/flashplayer_web2.png" alt="设置面板"></p>
+</li>
+<li><p>选择 <strong>浏览文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="img/flashplayer/flashplayer_web3.png" alt="设置面板"></p>
+</li>
+<li><p>看到信任位置已经添加成功。</p>
+</li>
+<li><p>刷新刚才的包涵flash的页面。</p>
+</li>
+</ol>
+<h2>通过 Flash Player 设置管理器</h2>
+<ol>
+<li><p>点击 <strong>高级</strong> 标签。找到 <strong>受信任位置设置</strong> ，在稍下面的位置，可能需要一下滚动条才能看到 :)<br><img src="img/flashplayer/flashplayer_1.png" alt="设置面板"></p>
+</li>
+<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>添加</strong><br><img src="img/flashplayer/flashplayer_2.png" alt="设置面板"></p>
+</li>
+<li><p>选择 <strong>添加文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="img/flashplayer/flashplayer_3.png" alt="设置面板"></p>
+</li>
+<li><p>看到信任位置已经添加成功。</p>
+</li>
+<li><p>刷新刚才的包涵flash的页面。</p>
+</li>
+</ol>
+]]></content>
+    <category scheme="http://vcharts.cn/tags/flash/" term="flash"/>
+    <category scheme="http://vcharts.cn/tags/flashplayer/" term="flashplayer"/>
+    <category scheme="http://vcharts.cn/tags/安全/" term="安全"/>
+    <category scheme="http://vcharts.cn/tags/本地/" term="本地"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[hi]]></title>
+    <link href="http://vcharts.cn/2013/12/有中文/"/>
+    <id>http://vcharts.cn/2013/12/有中文/</id>
+    <published>2013-12-19T07:53:17.000Z</published>
+    <updated>2013-12-19T07:53:17.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[flashobject]]></title>
-    <link href="http://vcharts.cn/2013/12/19/flashobject/"/>
-    <id>http://vcharts.cn/2013/12/19/flashobject/</id>
+    <link href="http://vcharts.cn/2013/12/flashobject/"/>
+    <id>http://vcharts.cn/2013/12/flashobject/</id>
     <published>2013-12-19T06:56:17.000Z</published>
     <updated>2013-12-19T06:56:17.000Z</updated>
     <content type="html"><![CDATA[]]></content>
   </entry>
   <entry>
     <title type="html"><![CDATA[Windows 运行打开命令]]></title>
-    <link href="http://vcharts.cn/2013/12/13/open-command/"/>
-    <id>http://vcharts.cn/2013/12/13/open-command/</id>
+    <link href="http://vcharts.cn/2013/12/Open Command/"/>
+    <id>http://vcharts.cn/2013/12/Open Command/</id>
     <published>2013-12-13T08:07:44.000Z</published>
-    <updated>2013-12-19T06:41:52.000Z</updated>
+    <updated>2013-12-20T06:21:09.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -60,10 +117,10 @@
   </entry>
   <entry>
     <title type="html"><![CDATA[CMD命令]]></title>
-    <link href="http://vcharts.cn/2013/12/13/cmd/"/>
-    <id>http://vcharts.cn/2013/12/13/cmd/</id>
+    <link href="http://vcharts.cn/2013/12/CMD Command/"/>
+    <id>http://vcharts.cn/2013/12/CMD Command/</id>
     <published>2013-12-13T08:02:58.000Z</published>
-    <updated>2013-12-18T08:49:36.000Z</updated>
+    <updated>2013-12-19T08:10:49.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -91,10 +148,10 @@
   </entry>
   <entry>
     <title type="html"><![CDATA[Sublime Text 快捷键]]></title>
-    <link href="http://vcharts.cn/2013/12/13/sublime text/keymap/"/>
-    <id>http://vcharts.cn/2013/12/13/sublime text/keymap/</id>
+    <link href="http://vcharts.cn/2013/12/Sublime-Text-Keymap/"/>
+    <id>http://vcharts.cn/2013/12/Sublime-Text-Keymap/</id>
     <published>2013-12-13T07:41:24.000Z</published>
-    <updated>2013-12-19T03:15:29.000Z</updated>
+    <updated>2013-12-19T10:03:09.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -142,7 +199,7 @@
 <tr>
 <td>Ctrl+M</td>
 <td></td>
-<td>跳转到括号</td>
+<td>跳转到括号首尾</td>
 </tr>
 <tr>
 <td></td>
@@ -189,6 +246,16 @@
 <td></td>
 <td>修改列</td>
 </tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alt+.</td>
+<td></td>
+<td>闭合标签</td>
+</tr>
 </tbody>
 </table>
 <p>前进后退切换文件</p>
@@ -198,8 +265,8 @@
   </entry>
   <entry>
     <title type="html"><![CDATA[Hi]]></title>
-    <link href="http://vcharts.cn/2013/12/05/hi/"/>
-    <id>http://vcharts.cn/2013/12/05/hi/</id>
+    <link href="http://vcharts.cn/2013/12/Hi/"/>
+    <id>http://vcharts.cn/2013/12/Hi/</id>
     <published>2013-12-05T02:32:56.000Z</published>
     <updated>2013-12-13T08:59:15.000Z</updated>
     <content type="html"><![CDATA[<h2>标题二</h2>
@@ -243,10 +310,10 @@ console.log(a);
   </entry>
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://vcharts.cn/2013/12/05/hello-world/"/>
-    <id>http://vcharts.cn/2013/12/05/hello-world/</id>
+    <link href="http://vcharts.cn/2013/12/Hello World/"/>
+    <id>http://vcharts.cn/2013/12/Hello World/</id>
     <published>2013-12-05T02:32:56.000Z</published>
-    <updated>2013-12-19T02:45:53.000Z</updated>
+    <updated>2013-12-19T08:37:47.000Z</updated>
     <content type="html"><![CDATA[<h2>标题二</h2>
 <h3>标题三</h3>
 <p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
