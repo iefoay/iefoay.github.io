@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iefoay.cn/2013/use-swfobject-embed-flash-content/</loc>
+    <lastmod>2013-12-27T09:45:03.000Z</lastmod>
+  </url>
+  <url>
     <loc>http://iefoay.cn/about/index.html</loc>
     <lastmod>2013-12-27T09:05:30.000Z</lastmod>
   </url>
@@ -27,9 +31,5 @@
   <url>
     <loc>http://iefoay.cn/2013/html-tag-to-glyph/</loc>
     <lastmod>2013-12-27T07:27:51.000Z</lastmod>
-  </url>
-  <url>
-    <loc>http://iefoay.cn/2013/use-swfobject-embed-flash-content/</loc>
-    <lastmod>2013-12-27T07:20:54.000Z</lastmod>
   </url>
 </urlset>

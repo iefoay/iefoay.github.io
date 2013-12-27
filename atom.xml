@@ -4,7 +4,7 @@
   <subtitle><![CDATA[点点滴滴]]></subtitle>
   <link href="http://iefoay.cn/atom.xml" rel="self"/>
   <link href="http://iefoay.cn"/>
-  <updated>2013-12-27T09:05:34.516Z</updated>
+  <updated>2013-12-27T09:46:29.191Z</updated>
   <id>http://iefoay.cn/</id>
   <author>
     <name><![CDATA[姚飞]]></name>
@@ -230,8 +230,10 @@
     <link href="http://iefoay.cn/2013/use-swfobject-embed-flash-content/"/>
     <id>http://iefoay.cn/2013/use-swfobject-embed-flash-content/</id>
     <published>2013-12-23T00:00:00.000Z</published>
-    <updated>2013-12-27T07:20:54.000Z</updated>
-    <content type="html"><![CDATA[<h2>从一个最简单的例子开始</h2>
+    <updated>2013-12-27T09:45:03.000Z</updated>
+    <content type="html"><![CDATA[<h2>下载</h2>
+<p><a href="http://iefoay.cn/downloads/swfobject_2_2.zip">swfobject_2_2.zip</a></p>
+<h2>从一个最简单的例子开始</h2>
 <h3> </h3>
 <figure class="highlight lang-html"><figcaption><span>第一步：创建一个标签，将被替换为flash内容</span></figcaption><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"myContent"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
