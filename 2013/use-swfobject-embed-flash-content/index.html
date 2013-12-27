@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>使用 SWFObject 嵌入 flash 内容 | iefoay</title>
+  <meta name="author" content="姚飞">
+  
+  <meta name="description" content="前端开发 Web SVG VML">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="使用 SWFObject 嵌入 flash 内容"/>
+  <meta property="og:site_name" content="iefoay"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="iefoay" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/main.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="/js/swfobject.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">iefoay</a></h1>
+  <h2><a href="/">点点滴滴</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+      <li><a href="/atom.xml">RSS订阅</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-12-23T00:00:00.000Z"><a href="/2013/use-swfobject-embed-flash-content/">2013-12-23</a></time>
+      
+      
+  
+    <h1 class="title">使用 SWFObject 嵌入 flash 内容</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2>从一个最简单的例子开始</h2>
+<h3> </h3>
+<figure class="highlight lang-html"><figcaption><span>第一步：创建一个标签，将被替换为flash内容</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"myContent"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p><a id="more"></a></p>
+<h3> </h3>
+<figure class="highlight lang-html"><figcaption><span>第二步：导入swfbject.js库</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"swfobject.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<h3> </h3>
+<figure class="highlight lang-html"><figcaption><span>第三步：使用 swfobject.embedSWF 方法嵌入flash文件</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
+	swfobject.embedSWF(<span class="string">"myContent.swf"</span>, <span class="string">"myContent"</span>, <span class="string">"300"</span>, <span class="string">"120"</span>, <span class="string">"9.0.0"</span>);
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>整体结果：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=utf-8"</span> /&gt;</span>
+	<span class="tag">&lt;<span class="title">title</span>&gt;</span>SWFObject 动态嵌入<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"swfobject.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
+		swfobject.embedSWF(<span class="string">"myContent.swf"</span>, <span class="string">"myContent"</span>, <span class="string">"300"</span>, <span class="string">"120"</span>, <span class="string">"9.0.0"</span>);
+	</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"myContent"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<h2>方法</h2>
+<h3>swfobject.embedSWF</h3>
+<p>swfobject.embedSWF(swfUrl, replaceElementId, width, height, version, expressInstallSwfurl, flashvars, params, attributes, callbackFn)</p>
+<p>更详细和列全面的了解一下，<code>swfobject.embedSWF</code>方法就是用来嵌入swf的</p>
+<p><strong>参数</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必选</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>swfUrl</td>
+<td>String</td>
+<td>是</td>
+<td>swf文件路径，即：嵌入谁</td>
+</tr>
+<tr>
+<td>replaceElementId</td>
+<td>String</td>
+<td>是</td>
+<td>将被替换为flash内容的标签，即：嵌入到哪</td>
+</tr>
+<tr>
+<td>width</td>
+<td>String</td>
+<td>是</td>
+<td>flash区域的宽</td>
+</tr>
+<tr>
+<td>height</td>
+<td>String</td>
+<td>是</td>
+<td>flash区域的高</td>
+</tr>
+<tr>
+<td>version</td>
+<td>String</td>
+<td>是</td>
+<td>所需要的 Flash Player 插件的最低版本</td>
+</tr>
+<tr>
+<td>expressInstallSwfurl</td>
+<td>String</td>
+<td>否</td>
+<td>用于帮助用户更新 Flash Player </td>
+</tr>
+<tr>
+<td>flashvars</td>
+<td>Object</td>
+<td>否</td>
+<td>为flash提供参数</td>
+</tr>
+<tr>
+<td>params</td>
+<td>Object</td>
+<td>否</td>
+<td>flash对象的嵌入方式</td>
+</tr>
+<tr>
+<td>attributes</td>
+<td>Object</td>
+<td>否</td>
+<td>给flash对象设置属性，如：指定id</td>
+</tr>
+<tr>
+<td>callbackFn</td>
+<td>Function</td>
+<td>否</td>
+<td>回调函数，嵌入完成（包括失败）将被调用</td>
+</tr>
+</tbody>
+</table>
+<p><em>params</em></p>
+<ul>
+<li><strong>menu</strong>= false | true —在flash区域内的右键菜单中，是否显示控制动画相关选项</li>
+<li><strong>wmode</strong>= <strong>window</strong> | direct | opaque | transparent | gpu</li>
+<li><strong>bgcolor</strong> —背景颜色，格式：#RRGGBB</li>
+<li><strong>base</strong> —目录</li>
+<li><strong>allowFullscreen</strong>= <strong>false</strong> | true</li>
+<li><strong>allowScriptAccess</strong>= <strong>samedomain</strong> | never | always</li>
+<li><strong>play</strong>= false | <strong>true</strong></li>
+<li><strong>loop</strong>= false | <strong>true</strong></li>
+<li><strong>quality</strong>= low | autolow | autohigh | medium | high | best</li>
+<li><strong>scale</strong>= <strong>showall</strong> | noborder | exactfit | noscale</li>
+<li><strong>align</strong>= l | t | r —参数分别代表left、top、right</li>
+<li><strong>salign</strong>= l | t | r | tl | tr —参数分别代表left、top、right、topleft、topright</li>
+</ul>
+<p><em>attributes</em></p>
+<p>如需要用js访问flash对象时，为了浏览器兼容性，<strong>id</strong> 和 <strong>name</strong> 两个属性都应该设置，且用同样的值</p>
+<h3>最终结果：</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class="code"><pre><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=utf-8"</span> /&gt;</span>
+	<span class="tag">&lt;<span class="title">title</span>&gt;</span>SWFObject 动态嵌入<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"swfobject.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
+		<span class="keyword">var</span> flashvars = {
+			name1: <span class="string">"hello"</span>,
+			name2: <span class="string">"world"</span>,
+			name3: <span class="string">"foobar"</span>
+		};
+		<span class="keyword">var</span> params = {
+			menu: <span class="string">"false"</span>,
+			wmode: <span class="string">"direct"</span>
+		};
+		<span class="keyword">var</span> attributes = {
+			id: <span class="string">"myDynamicContent"</span>,
+			name: <span class="string">"myDynamicContent"</span>
+		};
+		swfobject.embedSWF(<span class="string">"myContent.swf"</span>, <span class="string">"myContent"</span>, <span class="string">"300"</span>, <span class="string">"120"</span>, <span class="string">"9.0.0"</span>,
+			<span class="string">"expressInstall.swf"</span>,
+			flashvars,
+			params,
+			attributes
+		};
+	</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"myContent"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<h2>参考</h2>
+<p>官方首页：<a href="http://code.google.com/p/swfobject/" target="_blank">http://code.google.com/p/swfobject/</a><br>帮助文档：<a href="http://code.google.com/p/swfobject/wiki/documentation" target="_blank">http://code.google.com/p/swfobject/wiki/documentation</a><br>API文档：<a href="http://code.google.com/p/swfobject/wiki/api" target="_blank">http://code.google.com/p/swfobject/wiki/api</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/flash/">flash</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/flash/">flash</a>
+  </div>
+
+        
+
+	<!-- Baidu Button BEGIN -->
+	<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+		<a class="bds_tsina"></a>
+		<a class="bds_qzone"></a>
+		<a class="bds_tqq"></a>
+		<a class="bds_renren"></a>
+		<a class="bds_t163"></a>
+		<span class="bds_more"></span>
+		<a class="shareCount"></a>
+		</div>
+		<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6884758" ></script>
+		<script type="text/javascript" id="bdshell_js"></script>
+		<script type="text/javascript">
+		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+	</script>
+	<!-- Baidu Button END -->
+
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+
+<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"iefoay"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<!-- Duoshuo Comment END -->
+
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:iefoay.cn">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分類</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/flash/">flash</a><small>2</small></li>
+  
+    <li><a href="/categories/开发工具/">开发工具</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">標籤雲</h3>
+  <div class="entry">
+    <a href="/tags/CMD/" style="font-size: 10.00px;">CMD</a><a href="/tags/Mac/" style="font-size: 20.00px;">Mac</a><a href="/tags/PC/" style="font-size: 10.00px;">PC</a><a href="/tags/flash/" style="font-size: 20.00px;">flash</a><a href="/tags/flashplayer/" style="font-size: 10.00px;">flashplayer</a><a href="/tags/命令/" style="font-size: 10.00px;">命令</a><a href="/tags/安全/" style="font-size: 10.00px;">安全</a><a href="/tags/快捷键/" style="font-size: 20.00px;">快捷键</a><a href="/tags/本地/" style="font-size: 10.00px;">本地</a><a href="/tags/转义字符/" style="font-size: 10.00px;">转义字符</a><a href="/tags/运行/" style="font-size: 10.00px;">运行</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/aa/">aa</a>
+      </li>
+    
+      <li>
+        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
+      </li>
+    
+      <li>
+        <a href="/2013/html-tag-to-glyph/">常用的html转义字符</a>
+      </li>
+    
+      <li>
+        <a href="/2013/use-swfobject-embed-flash-content/">使用 SWFObject 嵌入 flash 内容</a>
+      </li>
+    
+      <li>
+        <a href="/2013/flashplayer-security/">Flash Player 全局安全设置</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+  <h3 class="title">友情链接</h3>
+  <ul class="entry">
+  	<li><a href="http://vcharts.cn/" title="VCharts">vcharts.cn</a></li>
+  </ul>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2013 姚飞
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

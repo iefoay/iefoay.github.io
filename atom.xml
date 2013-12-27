@@ -2,39 +2,491 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[iefoay]]></title>
   <subtitle><![CDATA[点点滴滴]]></subtitle>
-  <link href="http://vcharts.cn/atom.xml" rel="self"/>
-  <link href="http://vcharts.cn"/>
-  <updated>2013-12-20T10:26:54.635Z</updated>
-  <id>http://vcharts.cn/</id>
+  <link href="http://iefoay.cn/atom.xml" rel="self"/>
+  <link href="http://iefoay.cn"/>
+  <updated>2013-12-27T07:49:13.655Z</updated>
+  <id>http://iefoay.cn/</id>
   <author>
     <name><![CDATA[姚飞]]></name>
     <email><![CDATA[oiue@163.com]]></email>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[aa]]></title>
+    <link href="http://iefoay.cn/aa/"/>
+    <id>http://iefoay.cn/aa/</id>
+    <published>2013-12-27T07:39:14.000Z</published>
+    <updated>2013-12-27T07:39:14.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[TextMate 快捷键]]></title>
+    <link href="http://iefoay.cn/2013/TextMate-Keymap/"/>
+    <id>http://iefoay.cn/2013/TextMate-Keymap/</id>
+    <published>2013-12-27T00:00:00.000Z</published>
+    <updated>2013-12-27T07:30:16.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⌃⌘O</td>
+<td>以当前目录打开终端</td>
+</tr>
+<tr>
+<td>⇧⌘O</td>
+<td>打开Favorite窗口</td>
+</tr>
+<tr>
+<td>⌘T</td>
+<td>打开文件</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⇧⌘F</td>
+<td>全文查找/替换</td>
+</tr>
+<tr>
+<td>⌘G</td>
+<td>继续上次查找</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ESC</td>
+<td>代码补全</td>
+</tr>
+<tr>
+<td>⌘↩</td>
+<td>到行尾然后回车 </td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⌃W</td>
+<td>选择单词，可重复选择</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⌃T</td>
+<td>复制光标后的内容</td>
+</tr>
+<tr>
+<td>⌃Y</td>
+<td>剪切掉光标后的内容</td>
+</tr>
+<tr>
+<td>⌃⌥⌘V</td>
+<td>列出剪贴板历史，以粘贴</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⇧⌃D</td>
+<td>复制当前行</td>
+</tr>
+<tr>
+<td>⇧⌃K</td>
+<td>删除当前行</td>
+</tr>
+<tr>
+<td>⌃⌘←→</td>
+<td>左右移动选择内容</td>
+</tr>
+<tr>
+<td>⌃⌘↑↓</td>
+<td>上下移动选择内容；如果没有选择则上下移动当前行</td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+
+<h3>其它技巧</h3>
+<p>状态栏 右下角 快速跳转</p>
+<p><strong>说明</strong></p>
+<table>
+<thead>
+<tr>
+<th>按键</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⇧</td>
+<td>shift</td>
+</tr>
+<tr>
+<td>⌃</td>
+<td>control</td>
+</tr>
+<tr>
+<td>⌥</td>
+<td>option alt</td>
+</tr>
+<tr>
+<td>⌘</td>
+<td>command</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>我最常用的快捷键，还有一些没有放到上面，欢迎朋友们补充，方便我们共同参考。</p>
+</blockquote>
+]]></content>
+    <category scheme="http://iefoay.cn/tags/Mac/" term="Mac"/>
+    <category scheme="http://iefoay.cn/tags/快捷键/" term="快捷键"/>
+    <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[常用的html转义字符]]></title>
+    <link href="http://iefoay.cn/2013/html-tag-to-glyph/"/>
+    <id>http://iefoay.cn/2013/html-tag-to-glyph/</id>
+    <published>2013-12-27T00:00:00.000Z</published>
+    <updated>2013-12-27T07:27:51.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>html标签</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&amp;nbsp;</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>&amp;lt;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>&amp;gt;</td>
+</tr>
+<tr>
+<td>&copy;</td>
+<td>&amp;copy;</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>&amp;amp;</td>
+</tr>
+<tr>
+<td>&larr;</td>
+<td>&amp;larr;</td>
+</tr>
+<tr>
+<td>&rarr;</td>
+<td>&amp;rarr;</td>
+</tr>
+<tr>
+<td>&uarr;</td>
+<td>&amp;uarr;</td>
+</tr>
+<tr>
+<td>&darr;</td>
+<td>&amp;darr;</td>
+</tr>
+<tr>
+<td>&spades;</td>
+<td>&amp;spades;</td>
+</tr>
+<tr>
+<td>&clubs;</td>
+<td>&amp;clubs;</td>
+</tr>
+<tr>
+<td>&hearts;</td>
+<td>&amp;hearts;</td>
+</tr>
+<tr>
+<td>&diams;</td>
+<td>&amp;diams;</td>
+</tr>
+<tr>
+<td>&otimes;</td>
+<td>&amp;otimes;</td>
+</tr>
+<tr>
+<td>&lowast;</td>
+<td>&amp;lowast;</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category scheme="http://iefoay.cn/tags/转义字符/" term="转义字符"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[使用 SWFObject 嵌入 flash 内容]]></title>
+    <link href="http://iefoay.cn/2013/use-swfobject-embed-flash-content/"/>
+    <id>http://iefoay.cn/2013/use-swfobject-embed-flash-content/</id>
+    <published>2013-12-23T00:00:00.000Z</published>
+    <updated>2013-12-27T07:20:54.000Z</updated>
+    <content type="html"><![CDATA[<h2>从一个最简单的例子开始</h2>
+<h3> </h3>
+<figure class="highlight lang-html"><figcaption><span>第一步：创建一个标签，将被替换为flash内容</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"myContent"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p><a id="more"></a></p>
+<h3> </h3>
+<figure class="highlight lang-html"><figcaption><span>第二步：导入swfbject.js库</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"swfobject.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<h3> </h3>
+<figure class="highlight lang-html"><figcaption><span>第三步：使用 swfobject.embedSWF 方法嵌入flash文件</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
+	swfobject.embedSWF(<span class="string">"myContent.swf"</span>, <span class="string">"myContent"</span>, <span class="string">"300"</span>, <span class="string">"120"</span>, <span class="string">"9.0.0"</span>);
+</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>整体结果：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=utf-8"</span> /&gt;</span>
+	<span class="tag">&lt;<span class="title">title</span>&gt;</span>SWFObject 动态嵌入<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"swfobject.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
+		swfobject.embedSWF(<span class="string">"myContent.swf"</span>, <span class="string">"myContent"</span>, <span class="string">"300"</span>, <span class="string">"120"</span>, <span class="string">"9.0.0"</span>);
+	</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"myContent"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<h2>方法</h2>
+<h3>swfobject.embedSWF</h3>
+<p>swfobject.embedSWF(swfUrl, replaceElementId, width, height, version, expressInstallSwfurl, flashvars, params, attributes, callbackFn)</p>
+<p>更详细和列全面的了解一下，<code>swfobject.embedSWF</code>方法就是用来嵌入swf的</p>
+<p><strong>参数</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必选</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>swfUrl</td>
+<td>String</td>
+<td>是</td>
+<td>swf文件路径，即：嵌入谁</td>
+</tr>
+<tr>
+<td>replaceElementId</td>
+<td>String</td>
+<td>是</td>
+<td>将被替换为flash内容的标签，即：嵌入到哪</td>
+</tr>
+<tr>
+<td>width</td>
+<td>String</td>
+<td>是</td>
+<td>flash区域的宽</td>
+</tr>
+<tr>
+<td>height</td>
+<td>String</td>
+<td>是</td>
+<td>flash区域的高</td>
+</tr>
+<tr>
+<td>version</td>
+<td>String</td>
+<td>是</td>
+<td>所需要的 Flash Player 插件的最低版本</td>
+</tr>
+<tr>
+<td>expressInstallSwfurl</td>
+<td>String</td>
+<td>否</td>
+<td>用于帮助用户更新 Flash Player </td>
+</tr>
+<tr>
+<td>flashvars</td>
+<td>Object</td>
+<td>否</td>
+<td>为flash提供参数</td>
+</tr>
+<tr>
+<td>params</td>
+<td>Object</td>
+<td>否</td>
+<td>flash对象的嵌入方式</td>
+</tr>
+<tr>
+<td>attributes</td>
+<td>Object</td>
+<td>否</td>
+<td>给flash对象设置属性，如：指定id</td>
+</tr>
+<tr>
+<td>callbackFn</td>
+<td>Function</td>
+<td>否</td>
+<td>回调函数，嵌入完成（包括失败）将被调用</td>
+</tr>
+</tbody>
+</table>
+<p><em>params</em></p>
+<ul>
+<li><strong>menu</strong>= false | true —在flash区域内的右键菜单中，是否显示控制动画相关选项</li>
+<li><strong>wmode</strong>= <strong>window</strong> | direct | opaque | transparent | gpu</li>
+<li><strong>bgcolor</strong> —背景颜色，格式：#RRGGBB</li>
+<li><strong>base</strong> —目录</li>
+<li><strong>allowFullscreen</strong>= <strong>false</strong> | true</li>
+<li><strong>allowScriptAccess</strong>= <strong>samedomain</strong> | never | always</li>
+<li><strong>play</strong>= false | <strong>true</strong></li>
+<li><strong>loop</strong>= false | <strong>true</strong></li>
+<li><strong>quality</strong>= low | autolow | autohigh | medium | high | best</li>
+<li><strong>scale</strong>= <strong>showall</strong> | noborder | exactfit | noscale</li>
+<li><strong>align</strong>= l | t | r —参数分别代表left、top、right</li>
+<li><strong>salign</strong>= l | t | r | tl | tr —参数分别代表left、top、right、topleft、topright</li>
+</ul>
+<p><em>attributes</em></p>
+<p>如需要用js访问flash对象时，为了浏览器兼容性，<strong>id</strong> 和 <strong>name</strong> 两个属性都应该设置，且用同样的值</p>
+<h3>最终结果：</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class="code"><pre><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html; charset=utf-8"</span> /&gt;</span>
+	<span class="tag">&lt;<span class="title">title</span>&gt;</span>SWFObject 动态嵌入<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"swfobject.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
+		<span class="keyword">var</span> flashvars = {
+			name1: <span class="string">"hello"</span>,
+			name2: <span class="string">"world"</span>,
+			name3: <span class="string">"foobar"</span>
+		};
+		<span class="keyword">var</span> params = {
+			menu: <span class="string">"false"</span>,
+			wmode: <span class="string">"direct"</span>
+		};
+		<span class="keyword">var</span> attributes = {
+			id: <span class="string">"myDynamicContent"</span>,
+			name: <span class="string">"myDynamicContent"</span>
+		};
+		swfobject.embedSWF(<span class="string">"myContent.swf"</span>, <span class="string">"myContent"</span>, <span class="string">"300"</span>, <span class="string">"120"</span>, <span class="string">"9.0.0"</span>,
+			<span class="string">"expressInstall.swf"</span>,
+			flashvars,
+			params,
+			attributes
+		};
+	</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"myContent"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<h2>参考</h2>
+<p>官方首页：<a href="http://code.google.com/p/swfobject/" target="_blank">http://code.google.com/p/swfobject/</a><br>帮助文档：<a href="http://code.google.com/p/swfobject/wiki/documentation" target="_blank">http://code.google.com/p/swfobject/wiki/documentation</a><br>API文档：<a href="http://code.google.com/p/swfobject/wiki/api" target="_blank">http://code.google.com/p/swfobject/wiki/api</a></p>
+]]></content>
+    <category scheme="http://iefoay.cn/tags/flash/" term="flash"/>
+    <category scheme="http://iefoay.cn/categories/flash/" term="flash"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[Flash Player 全局安全设置]]></title>
-    <link href="http://vcharts.cn/2013/12/flashplayer-security/"/>
-    <id>http://vcharts.cn/2013/12/flashplayer-security/</id>
-    <published>2013-12-19T10:02:14.000Z</published>
-    <updated>2013-12-20T10:23:25.000Z</updated>
-    <content type="html"><![CDATA[<p>我们在本地环境测试时，flash中请求远程接口会受阻。这是由于受到了安全沙箱限制。通过添加信任位置，可通过此限制。</p>
+    <link href="http://iefoay.cn/2013/flashplayer-security/"/>
+    <id>http://iefoay.cn/2013/flashplayer-security/</id>
+    <published>2013-12-19T00:00:00.000Z</published>
+    <updated>2013-12-27T07:33:34.000Z</updated>
+    <content type="html"><![CDATA[<p>我们在本地环境测试flash内容时，由于受到了安全沙箱限制，flash以下行为可能会受阻。通过添加信任位置，可通过此限制。</p>
+<ul>
+<li>请求远程接口</li>
+<li>调用HTML接口</li>
+</ul>
 <p><p id="flashinfo"></p></p>
 <script type="text/javascript">var a=swfobject.ua.pv;if(a[0]){var info=a[0];}else{info='<b>此浏览器居然没有安装 Flash Player插件！！</b>';}$('<strong>此浏览器使用的 Flash Player 版本：'+a.join('.')+'</strong>').appendTo('#flashinfo');</script>
 
-<p>首先，在flashplayer区域中，点击右键 - <strong>全局设置</strong>。由于不同的插件版本，这时会有两种情况出现。</p>
-<ul>
+<h2>开始设置</h2>
+<p>在任意一个 Flash Player 区域中，点击右键 - <strong>全局设置</strong>。注意：由于不同的 Flash Player 版本，会有两种不同的情况出现。<br><a id="more"></a></p>
+<ol>
 <li>跳转到 <a href="http://www.macromedia.com/support/documentation/cn/flashplayer/help/settings_manager04.html" target="_blank">官方的设置页</a></li>
 <li>弹出 <strong>Flash Player 设置管理器</strong> 面板</li>
-</ul>
-<p>根据自己的出现的情况查看下面的图解即可<br><a id="more"></a></p>
+</ol>
+<p>根据自己的出现的情况查看下面的图解即可</p>
 <h2>通过官方的设置页</h2>
 <p>此页面在国内访问可能有点慢，耐心等待一下。右边有个设置管理器面板，是flash内容，如果没安装插件会提示你安装。</p>
 <ol>
-<li><p>确认自己在 <strong>“全局安全设置”面板</strong> 的标签。<br><img src="img/flashplayer/flashplayer_web1.png" alt="设置面板"></p>
+<li><p>确认自己在 <strong>“全局安全设置”面板</strong> 的标签。<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_web1.png" alt="网页"></p>
 </li>
-<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>编辑多个位置</strong> 右边的下拉三角，选择 <strong>添加位置</strong><br><img src="img/flashplayer/flashplayer_web2.png" alt="设置面板"></p>
+<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>编辑多个位置</strong> 右边的下拉三角，选择 <strong>添加位置</strong><br><img src="http://iefoay.cn/img/flashplayer/flashplayer_web2.png" alt="设置面板"></p>
 </li>
-<li><p>选择 <strong>浏览文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="img/flashplayer/flashplayer_web3.png" alt="设置面板"></p>
+<li><p>选择 <strong>浏览文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_web3.png" alt="设置面板"></p>
 </li>
 <li><p>看到信任位置已经添加成功。</p>
 </li>
@@ -43,11 +495,11 @@
 </ol>
 <h2>通过 Flash Player 设置管理器</h2>
 <ol>
-<li><p>点击 <strong>高级</strong> 标签。找到 <strong>受信任位置设置</strong> ，在稍下面的位置，可能需要一下滚动条才能看到 :)<br><img src="img/flashplayer/flashplayer_1.png" alt="设置面板"></p>
+<li><p>点击 <strong>高级</strong> 标签。找到 <strong>受信任位置设置</strong> ，在稍下面的位置，可能需要一下滚动条才能看到 :)<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_1.png" alt="设置面板"></p>
 </li>
-<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>添加</strong><br><img src="img/flashplayer/flashplayer_2.png" alt="设置面板"></p>
+<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>添加</strong><br><img src="http://iefoay.cn/img/flashplayer/flashplayer_2.png" alt="设置面板"></p>
 </li>
-<li><p>选择 <strong>添加文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="img/flashplayer/flashplayer_3.png" alt="设置面板"></p>
+<li><p>选择 <strong>添加文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_3.png" alt="设置面板"></p>
 </li>
 <li><p>看到信任位置已经添加成功。</p>
 </li>
@@ -55,103 +507,18 @@
 </li>
 </ol>
 ]]></content>
-    <category scheme="http://vcharts.cn/tags/flash/" term="flash"/>
-    <category scheme="http://vcharts.cn/tags/flashplayer/" term="flashplayer"/>
-    <category scheme="http://vcharts.cn/tags/安全/" term="安全"/>
-    <category scheme="http://vcharts.cn/tags/本地/" term="本地"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[hi]]></title>
-    <link href="http://vcharts.cn/2013/12/有中文/"/>
-    <id>http://vcharts.cn/2013/12/有中文/</id>
-    <published>2013-12-19T07:53:17.000Z</published>
-    <updated>2013-12-19T07:53:17.000Z</updated>
-    <content type="html"><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[flashobject]]></title>
-    <link href="http://vcharts.cn/2013/12/flashobject/"/>
-    <id>http://vcharts.cn/2013/12/flashobject/</id>
-    <published>2013-12-19T06:56:17.000Z</published>
-    <updated>2013-12-19T06:56:17.000Z</updated>
-    <content type="html"><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[Windows 运行打开命令]]></title>
-    <link href="http://vcharts.cn/2013/12/Open Command/"/>
-    <id>http://vcharts.cn/2013/12/Open Command/</id>
-    <published>2013-12-13T08:07:44.000Z</published>
-    <updated>2013-12-20T06:21:09.000Z</updated>
-    <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>nodepad</td>
-<td>记事本</td>
-</tr>
-<tr>
-<td>calc</td>
-<td>计算器</td>
-</tr>
-<tr>
-<td>regedit</td>
-<td>注册表</td>
-</tr>
-<tr>
-<td>gpedit.msc</td>
-<td>组策略</td>
-</tr>
-<tr>
-<td>services.msc</td>
-<td>服务</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    <category scheme="http://vcharts.cn/tags/速查手册/" term="速查手册"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[CMD命令]]></title>
-    <link href="http://vcharts.cn/2013/12/CMD Command/"/>
-    <id>http://vcharts.cn/2013/12/CMD Command/</id>
-    <published>2013-12-13T08:02:58.000Z</published>
-    <updated>2013-12-19T08:10:49.000Z</updated>
-    <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>说明    </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>d: d:\</td>
-<td>切换盘符</td>
-</tr>
-<tr>
-<td>cls</td>
-<td>清屏</td>
-</tr>
-<tr>
-<td>set</td>
-<td>查看环境变量</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    <category scheme="http://vcharts.cn/tags/速查手册/" term="速查手册"/>
+    <category scheme="http://iefoay.cn/tags/flash/" term="flash"/>
+    <category scheme="http://iefoay.cn/tags/flashplayer/" term="flashplayer"/>
+    <category scheme="http://iefoay.cn/tags/安全/" term="安全"/>
+    <category scheme="http://iefoay.cn/tags/本地/" term="本地"/>
+    <category scheme="http://iefoay.cn/categories/flash/" term="flash"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Sublime Text 快捷键]]></title>
-    <link href="http://vcharts.cn/2013/12/Sublime-Text-Keymap/"/>
-    <id>http://vcharts.cn/2013/12/Sublime-Text-Keymap/</id>
-    <published>2013-12-13T07:41:24.000Z</published>
-    <updated>2013-12-19T10:03:09.000Z</updated>
+    <link href="http://iefoay.cn/2013/Sublime-Text-Keymap/"/>
+    <id>http://iefoay.cn/2013/Sublime-Text-Keymap/</id>
+    <published>2013-12-13T00:00:00.000Z</published>
+    <updated>2013-12-27T07:33:23.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -258,101 +625,84 @@
 </tr>
 </tbody>
 </table>
-<p>前进后退切换文件</p>
-]]></content>
-    <category scheme="http://vcharts.cn/tags/快捷键/" term="快捷键"/>
-    <category scheme="http://vcharts.cn/tags/速查手册/" term="速查手册"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[Hi]]></title>
-    <link href="http://vcharts.cn/2013/12/Hi/"/>
-    <id>http://vcharts.cn/2013/12/Hi/</id>
-    <published>2013-12-05T02:32:56.000Z</published>
-    <updated>2013-12-13T08:59:15.000Z</updated>
-    <content type="html"><![CDATA[<h2>标题二</h2>
-<h3>标题三</h3>
-<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"favicon.png"</span> <span class="attribute">rel</span>=<span class="value">"icon"</span>&gt;</span>
-</pre></td></tr></table></figure>
-
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre><span class="tag">h1</span> <span class="rules">{<span class="rule"><span class="attribute">float</span>:<span class="value">left;</span></span><span class="rule">}</span></span>
-<span class="class">.c</span> <span class="rules">{<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>px;</span></span><span class="rule">}</span></span>
-</pre></td></tr></table></figure>
-
-<p><code>afds</code></p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre>static <span class="keyword">const</span> a:Object = <span class="number">4</span>;<span class="comment">//wifej</span>
-<span class="comment">/*
-private var ss:String = 35;
-var a:Event = 12;*/</span>
-console.log(a);
-<span class="keyword">var</span> a = <span class="number">12</span>;
-console.log(a);
-</pre></td></tr></table></figure>
-
 <a id="more"></a>
 
-<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<p><img src="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" alt="说明" title="sdjf"><br>AAAA</p>
+<h2>其它技巧</h2>
+<p>如果鼠标有前进后退键，可以用它们来切换标签</p>
 ]]></content>
-    <category scheme="http://vcharts.cn/tags/qfew/" term="qfew"/>
-    <category scheme="http://vcharts.cn/tags/aa/" term="aa"/>
-    <category scheme="http://vcharts.cn/tags/ww/" term="ww"/>
+    <category scheme="http://iefoay.cn/tags/Mac/" term="Mac"/>
+    <category scheme="http://iefoay.cn/tags/快捷键/" term="快捷键"/>
   </entry>
   <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://vcharts.cn/2013/12/Hello World/"/>
-    <id>http://vcharts.cn/2013/12/Hello World/</id>
-    <published>2013-12-05T02:32:56.000Z</published>
-    <updated>2013-12-19T08:37:47.000Z</updated>
-    <content type="html"><![CDATA[<h2>标题二</h2>
-<h3>标题三</h3>
-<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"favicon.png"</span> <span class="attribute">rel</span>=<span class="value">"icon"</span>&gt;</span>
-</pre></td></tr></table></figure>
-
-<pre><code><span class="tag">h1</span> <span class="rules">{<span class="rule"><span class="attribute">float</span>:<span class="value">left;</span></span><span class="rule">}</span></span>
-<span class="class">.c</span> <span class="rules">{<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>px;</span></span><span class="rule">}</span></span></code></pre>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre><span class="tag">h1</span> <span class="rules">{<span class="rule"><span class="attribute">float</span>:<span class="value">left;</span></span><span class="rule">}</span></span>
-<span class="class">.c</span> <span class="rules">{<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>px;</span></span><span class="rule">}</span></span>
-</pre></td></tr></table></figure>
-
-<p><code>afds</code></p>
-<figure class="highlight lang-js"><figcaption><span>asdfs</span></figcaption><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="code"><pre>static <span class="keyword">const</span> a:Object = <span class="number">4</span>;<span class="comment">//wifej</span>
-<span class="comment">/*
-private var ss:String = 35;
-var a:Event = 12;*/</span>
-console.log(a);
-<span class="keyword">var</span> a = <span class="number">12</span>;
-console.log(a);
-</pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-<p>![说明](<a href="http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578" target="_blank">http://img.t.sinajs.cn/t5/skin/skinvip120/images/body_bg.jpg?id=1348554801578</a> sdjf)<br>asfdsa</p>
+    <title type="html"><![CDATA[Windows 运行打开命令]]></title>
+    <link href="http://iefoay.cn/2013/Open-Command/"/>
+    <id>http://iefoay.cn/2013/Open-Command/</id>
+    <published>2013-12-13T00:00:00.000Z</published>
+    <updated>2013-12-27T07:33:27.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nodepad</td>
+<td>记事本</td>
+</tr>
+<tr>
+<td>calc</td>
+<td>计算器</td>
+</tr>
+<tr>
+<td>regedit</td>
+<td>注册表</td>
+</tr>
+<tr>
+<td>gpedit.msc</td>
+<td>组策略</td>
+</tr>
+<tr>
+<td>services.msc</td>
+<td>服务</td>
+</tr>
+</tbody>
+</table>
 ]]></content>
-    <category scheme="http://vcharts.cn/tags/qfew/" term="qfew"/>
-    <category scheme="http://vcharts.cn/tags/aa/" term="aa"/>
-    <category scheme="http://vcharts.cn/tags/ww/" term="ww"/>
+    <category scheme="http://iefoay.cn/tags/运行/" term="运行"/>
+    <category scheme="http://iefoay.cn/tags/命令/" term="命令"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[CMD命令]]></title>
+    <link href="http://iefoay.cn/2013/CMD-Command/"/>
+    <id>http://iefoay.cn/2013/CMD-Command/</id>
+    <published>2013-12-13T00:00:00.000Z</published>
+    <updated>2013-12-27T07:33:39.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>d: d:\</td>
+<td>切换盘符</td>
+</tr>
+<tr>
+<td>cls</td>
+<td>清屏</td>
+</tr>
+<tr>
+<td>set</td>
+<td>查看环境变量</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category scheme="http://iefoay.cn/tags/CMD/" term="CMD"/>
+    <category scheme="http://iefoay.cn/tags/PC/" term="PC"/>
   </entry>
 </feed>

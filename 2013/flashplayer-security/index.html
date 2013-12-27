@@ -57,7 +57,7 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-12-19T10:02:14.000Z"><a href="/2013/12/flashplayer-security/">2013-12-19</a></time>
+        <time datetime="2013-12-19T00:00:00.000Z"><a href="/2013/flashplayer-security/">2013-12-19</a></time>
       
       
   
@@ -67,24 +67,29 @@
     </header>
     <div class="entry">
       
-        <p>我们在本地环境测试时，flash中请求远程接口会受阻。这是由于受到了安全沙箱限制。通过添加信任位置，可通过此限制。</p>
+        <p>我们在本地环境测试flash内容时，由于受到了安全沙箱限制，flash以下行为可能会受阻。通过添加信任位置，可通过此限制。</p>
+<ul>
+<li>请求远程接口</li>
+<li>调用HTML接口</li>
+</ul>
 <p><p id="flashinfo"></p></p>
 <script type="text/javascript">var a=swfobject.ua.pv;if(a[0]){var info=a[0];}else{info='<b>此浏览器居然没有安装 Flash Player插件！！</b>';}$('<strong>此浏览器使用的 Flash Player 版本：'+a.join('.')+'</strong>').appendTo('#flashinfo');</script>
 
-<p>首先，在flashplayer区域中，点击右键 - <strong>全局设置</strong>。由于不同的插件版本，这时会有两种情况出现。</p>
-<ul>
+<h2>开始设置</h2>
+<p>在任意一个 Flash Player 区域中，点击右键 - <strong>全局设置</strong>。注意：由于不同的 Flash Player 版本，会有两种不同的情况出现。<br><a id="more"></a></p>
+<ol>
 <li>跳转到 <a href="http://www.macromedia.com/support/documentation/cn/flashplayer/help/settings_manager04.html" target="_blank">官方的设置页</a></li>
 <li>弹出 <strong>Flash Player 设置管理器</strong> 面板</li>
-</ul>
-<p>根据自己的出现的情况查看下面的图解即可<br><a id="more"></a></p>
+</ol>
+<p>根据自己的出现的情况查看下面的图解即可</p>
 <h2>通过官方的设置页</h2>
 <p>此页面在国内访问可能有点慢，耐心等待一下。右边有个设置管理器面板，是flash内容，如果没安装插件会提示你安装。</p>
 <ol>
-<li><p>确认自己在 <strong>“全局安全设置”面板</strong> 的标签。<br><img src="img/flashplayer/flashplayer_web1.png" alt="设置面板"></p>
+<li><p>确认自己在 <strong>“全局安全设置”面板</strong> 的标签。<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_web1.png" alt="网页"></p>
 </li>
-<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>编辑多个位置</strong> 右边的下拉三角，选择 <strong>添加位置</strong><br><img src="img/flashplayer/flashplayer_web2.png" alt="设置面板"></p>
+<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>编辑多个位置</strong> 右边的下拉三角，选择 <strong>添加位置</strong><br><img src="http://iefoay.cn/img/flashplayer/flashplayer_web2.png" alt="设置面板"></p>
 </li>
-<li><p>选择 <strong>浏览文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="img/flashplayer/flashplayer_web3.png" alt="设置面板"></p>
+<li><p>选择 <strong>浏览文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_web3.png" alt="设置面板"></p>
 </li>
 <li><p>看到信任位置已经添加成功。</p>
 </li>
@@ -93,11 +98,11 @@
 </ol>
 <h2>通过 Flash Player 设置管理器</h2>
 <ol>
-<li><p>点击 <strong>高级</strong> 标签。找到 <strong>受信任位置设置</strong> ，在稍下面的位置，可能需要一下滚动条才能看到 :)<br><img src="img/flashplayer/flashplayer_1.png" alt="设置面板"></p>
+<li><p>点击 <strong>高级</strong> 标签。找到 <strong>受信任位置设置</strong> ，在稍下面的位置，可能需要一下滚动条才能看到 :)<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_1.png" alt="设置面板"></p>
 </li>
-<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>添加</strong><br><img src="img/flashplayer/flashplayer_2.png" alt="设置面板"></p>
+<li><p>这里有个列表，表示已经在本机添加过的位置。点击 <strong>添加</strong><br><img src="http://iefoay.cn/img/flashplayer/flashplayer_2.png" alt="设置面板"></p>
 </li>
-<li><p>选择 <strong>添加文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="img/flashplayer/flashplayer_3.png" alt="设置面板"></p>
+<li><p>选择 <strong>添加文件夹</strong> ，在弹出本地窗口选择要查看的swf文件所在目录或其父级目录。<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_3.png" alt="设置面板"></p>
 </li>
 <li><p>看到信任位置已经添加成功。</p>
 </li>
@@ -110,6 +115,11 @@
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/flash/">flash</a>
+  </div>
+
         
   
   <div class="tags">
@@ -165,18 +175,29 @@ var duoshuoQuery = {short_name:"iefoay"};
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="搜索">
-    <input type="hidden" name="q" value="site:vcharts.cn">
+    <input type="search" name="q" results="0" placeholder="搜尋">
+    <input type="hidden" name="q" value="site:iefoay.cn">
   </form>
 </div>
 
   
+<div class="widget tag">
+  <h3 class="title">分類</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/flash/">flash</a><small>2</small></li>
+  
+    <li><a href="/categories/开发工具/">开发工具</a><small>1</small></li>
+  
+  </ul>
+</div>
+
 
   
 <div class="widget tagcloud">
-  <h3 class="title">标签云</h3>
+  <h3 class="title">標籤雲</h3>
   <div class="entry">
-    <a href="/tags/aa/" style="font-size: 15.00px;">aa</a><a href="/tags/flash/" style="font-size: 10.00px;">flash</a><a href="/tags/flashplayer/" style="font-size: 10.00px;">flashplayer</a><a href="/tags/qfew/" style="font-size: 15.00px;">qfew</a><a href="/tags/ww/" style="font-size: 15.00px;">ww</a><a href="/tags/安全/" style="font-size: 10.00px;">安全</a><a href="/tags/快捷键/" style="font-size: 10.00px;">快捷键</a><a href="/tags/本地/" style="font-size: 10.00px;">本地</a><a href="/tags/速查手册/" style="font-size: 20.00px;">速查手册</a>
+    <a href="/tags/CMD/" style="font-size: 10.00px;">CMD</a><a href="/tags/Mac/" style="font-size: 20.00px;">Mac</a><a href="/tags/PC/" style="font-size: 10.00px;">PC</a><a href="/tags/flash/" style="font-size: 20.00px;">flash</a><a href="/tags/flashplayer/" style="font-size: 10.00px;">flashplayer</a><a href="/tags/命令/" style="font-size: 10.00px;">命令</a><a href="/tags/安全/" style="font-size: 10.00px;">安全</a><a href="/tags/快捷键/" style="font-size: 20.00px;">快捷键</a><a href="/tags/本地/" style="font-size: 10.00px;">本地</a><a href="/tags/转义字符/" style="font-size: 10.00px;">转义字符</a><a href="/tags/运行/" style="font-size: 10.00px;">运行</a>
   </div>
 </div>
 
@@ -187,23 +208,23 @@ var duoshuoQuery = {short_name:"iefoay"};
   <ul class="entry">
     
       <li>
-        <a href="/2013/12/flashplayer-security/">Flash Player 全局安全设置</a>
+        <a href="/aa/">aa</a>
       </li>
     
       <li>
-        <a href="/2013/12/有中文/">hi</a>
+        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
       </li>
     
       <li>
-        <a href="/2013/12/flashobject/">flashobject</a>
+        <a href="/2013/html-tag-to-glyph/">常用的html转义字符</a>
       </li>
     
       <li>
-        <a href="/2013/12/Open Command/">Windows 运行打开命令</a>
+        <a href="/2013/use-swfobject-embed-flash-content/">使用 SWFObject 嵌入 flash 内容</a>
       </li>
     
       <li>
-        <a href="/2013/12/CMD Command/">CMD命令</a>
+        <a href="/2013/flashplayer-security/">Flash Player 全局安全设置</a>
       </li>
     
   </ul>
