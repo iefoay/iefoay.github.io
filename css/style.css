@@ -295,7 +295,7 @@ article .entry blockquote {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   font-style: italic;
-  font-family: "Georgia", serif;
+  font-family: "微软雅黑", "Georgia", serif;
   font-size: 1.2em;
   padding: 0 30px 15px;
   text-align: center;
@@ -314,7 +314,7 @@ article .entry blockquote footer cite:before {
 }
 article .entry code,
 article .entry pre {
-  font-family: Monaco, Menlo, Consolas, Courier New, monospace;
+  font-family: "微软雅黑", Monaco, Menlo, Consolas, Courier New, monospace;
 }
 article .entry code {
   background: #eee;
@@ -668,7 +668,7 @@ article footer .addthis iframe {
 }
 .entry .gist .gist-file .gist-data pre {
   padding: 0 !important;
-  font-family: Monaco, Menlo, Consolas, Courier New, monospace;
+  font-family: "微软雅黑", Monaco, Menlo, Consolas, Courier New, monospace;
 }
 .entry .gist .gist-file .gist-meta {
   background: none;
