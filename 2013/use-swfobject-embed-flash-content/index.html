@@ -437,5 +437,27 @@ var duoshuoQuery = {short_name:"iefoay"};
 })(jQuery);
 </script>
 
+
+<!--返回顶部-->
+<script type="text/javascript">
+$(function(){
+    $("body").append("<a href='javascript:void(0);' id='gotop' onfocus='this.blur()'></a>");
+    $(window).bind('scroll',function() {
+        var w_scrollTop = $(window).scrollTop();
+        if(w_scrollTop > 150){
+            $("#gotop").fadeIn(300);
+        }
+        else if(w_scrollTop < 200){
+            $("#gotop").fadeOut(300);
+        }
+    });
+    $("#gotop").click(function() {
+        $("html,body").animate({scrollTop:0}, 300);
+        return false;
+    });    
+});
+</script>
+<!--返回顶部-->
+
 </body>
 </html>

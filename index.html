@@ -443,11 +443,11 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-12-13T00:00:00.000Z"><a href="/2013/CMD-Command/">2013-12-13</a></time>
+        <time datetime="2013-12-13T00:00:00.000Z"><a href="/2013/Open-Command/">2013-12-13</a></time>
       
       
   
-    <h1 class="title"><a href="/2013/CMD-Command/">CMD命令</a></h1>
+    <h1 class="title"><a href="/2013/Open-Command/">Windows 运行打开命令</a></h1>
   
 
     </header>
@@ -456,22 +456,30 @@
         <table>
 <thead>
 <tr>
-<th>快捷键</th>
-<th>说明    </th>
+<th>命令</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>d: d:\</td>
-<td>切换盘符</td>
+<td>nodepad</td>
+<td>记事本</td>
 </tr>
 <tr>
-<td>cls</td>
-<td>清屏</td>
+<td>calc</td>
+<td>计算器</td>
 </tr>
 <tr>
-<td>set</td>
-<td>查看环境变量</td>
+<td>regedit</td>
+<td>注册表</td>
+</tr>
+<tr>
+<td>gpedit.msc</td>
+<td>组策略</td>
+</tr>
+<tr>
+<td>services.msc</td>
+<td>服务</td>
 </tr>
 </tbody>
 </table>
@@ -637,11 +645,11 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2013-12-13T00:00:00.000Z"><a href="/2013/Open-Command/">2013-12-13</a></time>
+        <time datetime="2013-12-13T00:00:00.000Z"><a href="/2013/CMD-Command/">2013-12-13</a></time>
       
       
   
-    <h1 class="title"><a href="/2013/Open-Command/">Windows 运行打开命令</a></h1>
+    <h1 class="title"><a href="/2013/CMD-Command/">CMD命令</a></h1>
   
 
     </header>
@@ -650,30 +658,22 @@
         <table>
 <thead>
 <tr>
-<th>命令</th>
-<th>说明</th>
+<th>快捷键</th>
+<th>说明    </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>nodepad</td>
-<td>记事本</td>
+<td>d: d:\</td>
+<td>切换盘符</td>
 </tr>
 <tr>
-<td>calc</td>
-<td>计算器</td>
+<td>cls</td>
+<td>清屏</td>
 </tr>
 <tr>
-<td>regedit</td>
-<td>注册表</td>
-</tr>
-<tr>
-<td>gpedit.msc</td>
-<td>组策略</td>
-</tr>
-<tr>
-<td>services.msc</td>
-<td>服务</td>
+<td>set</td>
+<td>查看环境变量</td>
 </tr>
 </tbody>
 </table>
@@ -787,6 +787,28 @@
   $('.fancybox').fancybox();
 })(jQuery);
 </script>
+
+
+<!--返回顶部-->
+<script type="text/javascript">
+$(function(){
+    $("body").append("<a href='javascript:void(0);' id='gotop' onfocus='this.blur()'></a>");
+    $(window).bind('scroll',function() {
+        var w_scrollTop = $(window).scrollTop();
+        if(w_scrollTop > 150){
+            $("#gotop").fadeIn(300);
+        }
+        else if(w_scrollTop < 200){
+            $("#gotop").fadeOut(300);
+        }
+    });
+    $("#gotop").click(function() {
+        $("html,body").animate({scrollTop:0}, 300);
+        return false;
+    });    
+});
+</script>
+<!--返回顶部-->
 
 </body>
 </html>

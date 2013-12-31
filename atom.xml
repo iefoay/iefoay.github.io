@@ -4,7 +4,7 @@
   <subtitle><![CDATA[点点滴滴]]></subtitle>
   <link href="http://iefoay.cn/atom.xml" rel="self"/>
   <link href="http://iefoay.cn"/>
-  <updated>2013-12-31T05:38:08.304Z</updated>
+  <updated>2013-12-31T08:01:04.637Z</updated>
   <id>http://iefoay.cn/</id>
   <author>
     <name><![CDATA[姚飞]]></name>
@@ -729,36 +729,44 @@ ast.print(stream);
     <category scheme="http://iefoay.cn/categories/flash/" term="flash"/>
   </entry>
   <entry>
-    <title type="html"><![CDATA[CMD命令]]></title>
-    <link href="http://iefoay.cn/2013/CMD-Command/"/>
-    <id>http://iefoay.cn/2013/CMD-Command/</id>
+    <title type="html"><![CDATA[Windows 运行打开命令]]></title>
+    <link href="http://iefoay.cn/2013/Open-Command/"/>
+    <id>http://iefoay.cn/2013/Open-Command/</id>
     <published>2013-12-13T00:00:00.000Z</published>
-    <updated>2013-12-31T02:59:33.000Z</updated>
+    <updated>2013-12-31T02:59:06.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
-<th>快捷键</th>
-<th>说明    </th>
+<th>命令</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>d: d:\</td>
-<td>切换盘符</td>
+<td>nodepad</td>
+<td>记事本</td>
 </tr>
 <tr>
-<td>cls</td>
-<td>清屏</td>
+<td>calc</td>
+<td>计算器</td>
 </tr>
 <tr>
-<td>set</td>
-<td>查看环境变量</td>
+<td>regedit</td>
+<td>注册表</td>
+</tr>
+<tr>
+<td>gpedit.msc</td>
+<td>组策略</td>
+</tr>
+<tr>
+<td>services.msc</td>
+<td>服务</td>
 </tr>
 </tbody>
 </table>
 ]]></content>
-    <category scheme="http://iefoay.cn/tags/CMD/" term="CMD"/>
-    <category scheme="http://iefoay.cn/tags/PC/" term="PC"/>
+    <category scheme="http://iefoay.cn/tags/运行/" term="运行"/>
+    <category scheme="http://iefoay.cn/tags/命令/" term="命令"/>
     <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
   <entry>
@@ -883,44 +891,36 @@ ast.print(stream);
     <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
   <entry>
-    <title type="html"><![CDATA[Windows 运行打开命令]]></title>
-    <link href="http://iefoay.cn/2013/Open-Command/"/>
-    <id>http://iefoay.cn/2013/Open-Command/</id>
+    <title type="html"><![CDATA[CMD命令]]></title>
+    <link href="http://iefoay.cn/2013/CMD-Command/"/>
+    <id>http://iefoay.cn/2013/CMD-Command/</id>
     <published>2013-12-13T00:00:00.000Z</published>
-    <updated>2013-12-31T02:59:06.000Z</updated>
+    <updated>2013-12-31T02:59:33.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
-<th>命令</th>
-<th>说明</th>
+<th>快捷键</th>
+<th>说明    </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>nodepad</td>
-<td>记事本</td>
+<td>d: d:\</td>
+<td>切换盘符</td>
 </tr>
 <tr>
-<td>calc</td>
-<td>计算器</td>
+<td>cls</td>
+<td>清屏</td>
 </tr>
 <tr>
-<td>regedit</td>
-<td>注册表</td>
-</tr>
-<tr>
-<td>gpedit.msc</td>
-<td>组策略</td>
-</tr>
-<tr>
-<td>services.msc</td>
-<td>服务</td>
+<td>set</td>
+<td>查看环境变量</td>
 </tr>
 </tbody>
 </table>
 ]]></content>
-    <category scheme="http://iefoay.cn/tags/运行/" term="运行"/>
-    <category scheme="http://iefoay.cn/tags/命令/" term="命令"/>
+    <category scheme="http://iefoay.cn/tags/CMD/" term="CMD"/>
+    <category scheme="http://iefoay.cn/tags/PC/" term="PC"/>
     <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
 </feed>

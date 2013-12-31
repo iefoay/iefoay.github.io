@@ -133,9 +133,9 @@
         <div class="post-content">
           <header>
             <div class="icon"></div>
-            <time datetime="2013-12-13T00:00:00.000Z"><a href="/2013/CMD-Command/">2013-12-13</a></time>
+            <time datetime="2013-12-13T00:00:00.000Z"><a href="/2013/Open-Command/">2013-12-13</a></time>
             
-              <h1 class="title"><a href="/2013/CMD-Command/">CMD命令</a></h1>
+              <h1 class="title"><a href="/2013/Open-Command/">Windows 运行打开命令</a></h1>
             
           </header>
         </div>
@@ -157,9 +157,9 @@
         <div class="post-content">
           <header>
             <div class="icon"></div>
-            <time datetime="2013-12-13T00:00:00.000Z"><a href="/2013/Open-Command/">2013-12-13</a></time>
+            <time datetime="2013-12-13T00:00:00.000Z"><a href="/2013/CMD-Command/">2013-12-13</a></time>
             
-              <h1 class="title"><a href="/2013/Open-Command/">Windows 运行打开命令</a></h1>
+              <h1 class="title"><a href="/2013/CMD-Command/">CMD命令</a></h1>
             
           </header>
         </div>
@@ -256,6 +256,28 @@
   $('.fancybox').fancybox();
 })(jQuery);
 </script>
+
+
+<!--返回顶部-->
+<script type="text/javascript">
+$(function(){
+    $("body").append("<a href='javascript:void(0);' id='gotop' onfocus='this.blur()'></a>");
+    $(window).bind('scroll',function() {
+        var w_scrollTop = $(window).scrollTop();
+        if(w_scrollTop > 150){
+            $("#gotop").fadeIn(300);
+        }
+        else if(w_scrollTop < 200){
+            $("#gotop").fadeOut(300);
+        }
+    });
+    $("#gotop").click(function() {
+        $("html,body").animate({scrollTop:0}, 300);
+        return false;
+    });    
+});
+</script>
+<!--返回顶部-->
 
 </body>
 </html>

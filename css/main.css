@@ -1,7 +1,7 @@
+/*表格*/
 /* table tr:nth-child(2n) {
   background: #f9f9f9;
 } */
-
 table {
   width: auto;
   border: 1px solid #ddd;
@@ -28,4 +28,23 @@ figure.highlight table td {
   border-style: none;
   padding: 0;
   text-align: inherit;
+}
+
+/*返回顶部*/
+#gotop{
+  display:none;
+  position:fixed;
+  width:53px;
+  height:53px;
+  overflow:hidden;
+  right:10px;
+  bottom:50px;
+  z-index:99999;
+  border-radius:8px;
+  color:#fff;
+  opacity: .8;
+  background-image: url(/img/lanren_top.png);
+}
+#gotop:hover{
+  background-position: -70px 0;
 }
