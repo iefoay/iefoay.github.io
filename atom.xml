@@ -4,7 +4,7 @@
   <subtitle><![CDATA[点点滴滴]]></subtitle>
   <link href="http://iefoay.cn/atom.xml" rel="self"/>
   <link href="http://iefoay.cn"/>
-  <updated>2013-12-27T09:46:29.191Z</updated>
+  <updated>2013-12-31T05:38:08.304Z</updated>
   <id>http://iefoay.cn/</id>
   <author>
     <name><![CDATA[姚飞]]></name>
@@ -12,11 +12,230 @@
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[以NodeJS代码的方式使用UglifyJS2 -The simple way]]></title>
+    <link href="http://iefoay.cn/2013/uglifyjs-with-code-simple-way/"/>
+    <id>http://iefoay.cn/2013/uglifyjs-with-code-simple-way/</id>
+    <published>2013-12-30T05:55:00.000Z</published>
+    <updated>2013-12-31T03:02:18.000Z</updated>
+    <content type="html"><![CDATA[<p>UglifyJS 是一个 JavaScript 的打包、压缩工具。建议使用第2个版：UglifyJS2，详情见<a href="https://github.com/mishoo/UglifyJS2" target="_blank">Github</a>。<br>一般来说，使用简单的方式，就能满足我们的需求。</p>
+<p><a id="more"></a></p>
+<h2>安装</h2>
+<p>这里使用 <em>命令行</em> 的方式安装 UglifyJS2。其实就是把 <em>uglify-js</em> 模块下载到你的当前目录。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="title">cd</span> your/project/path
+<span class="title">npm</span> install uglify-js
+</pre></td></tr></table></figure>
+
+<h2>写NodeJS代码</h2>
+<p>创建一个名为 test.js 的文件，做为NodeJS主文件。开始写代码。</p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = require(<span class="string">"uglify-js"</span>);
+<span class="keyword">var</span> result = UglifyJS.minify(<span class="string">"source.js"</span>);
+console.log(result.code);
+</pre></td></tr></table></figure>
+
+<p>切换到<em>使命行</em>，看看输出结果</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="title">node</span> test.js
+</pre></td></tr></table></figure>
+
+<h2>方法说明</h2>
+<h3>UglifyJS.minify()</h3>
+<p>UglifyJS.minify(input, option)</p>
+<p><strong>参数</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必选</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>input</td>
+<td>String &#124; Array</td>
+<td>是</td>
+<td>输入，可以是文件路径，也可以是源代码的字符串</td>
+</tr>
+<tr>
+<td>option</td>
+<td>Object</td>
+<td>否</td>
+<td>综合选项</td>
+</tr>
+</tbody>
+</table>
+<p><em>option</em></p>
+<figure class="highlight lang-js"><figcaption><span>option 参考配置表</span></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="code"><pre>{
+	fromString: <span class="literal">true</span>,		<span class="comment">//说明代码源的格式是否为字符串</span>
+	mangle: <span class="literal">false</span>,			<span class="comment">//是否压缩</span>
+	warnings: <span class="literal">false</span>,			<span class="comment">//显示压缩报错</span>
+	output: {
+		beautify: <span class="literal">false</span>,		<span class="comment">//代码格式美化，便于阅读</span>
+		comments: <span class="literal">false</span>	<span class="comment">//是否保留注释</span>
+		...
+	},
+	compress: {
+		global_defs: {},		<span class="comment">//定义全局变量</span>
+		join_vars: <span class="literal">true</span>		<span class="comment">//使用连贯的变量声明</span>
+		...
+	}
+}
+</pre></td></tr></table></figure>
+
+<p>可以组合多个文件：</p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="keyword">var</span> result = UglifyJS.minify([ <span class="string">"file1.js"</span>, <span class="string">"file2.js"</span>, <span class="string">"file3.js"</span> ]);
+</pre></td></tr></table></figure>
+
+<p>代码源也可以是字符串：</p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="keyword">var</span> orig_code = <span class="string">"var abc = 1;"</span>;
+<span class="keyword">var</span> result = UglifyJS.minify(orig_code, {
+	fromString: <span class="literal">true</span>
+});
+</pre></td></tr></table></figure>
+
+]]></content>
+    <category scheme="http://iefoay.cn/tags/UglifyJS/" term="UglifyJS"/>
+    <category scheme="http://iefoay.cn/tags/Node/" term="Node"/>
+    <category scheme="http://iefoay.cn/categories/JavaScript/" term="JavaScript"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[以NodeJS代码的方式使用UglifyJS2 -The hard way]]></title>
+    <link href="http://iefoay.cn/2013/uglifyjs-with-code-hard-way/"/>
+    <id>http://iefoay.cn/2013/uglifyjs-with-code-hard-way/</id>
+    <published>2013-12-30T05:53:34.000Z</published>
+    <updated>2013-12-31T03:02:32.000Z</updated>
+    <content type="html"><![CDATA[<p>本文只是作为引导入门用。详细说明请查看<a href="https://github.com/mishoo/UglifyJS2#the-hard-way" target="_blank">官方的文档</a><br><a id="more"></a></p>
+<h2>准备工作</h2>
+<ul>
+<li>已安装了node.js</li>
+<li>有uglify-js模块</li>
+</ul>
+<h2>写NodeJS代码</h2>
+<p>创建一个名为 test.js 的文件，做为NodeJS主文件。开始写代码</p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = require(<span class="string">"uglify-js"</span>);
+</pre></td></tr></table></figure>
+
+<p>读取源代码内容</p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="keyword">var</span> fs = require(<span class="string">'fs'</span>);
+<span class="keyword">var</span> orig_code = fs.readFileSync(<span class="string">"source.js"</span>);
+</pre></td></tr></table></figure>
+
+<p>解析源代码和审查</p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="keyword">var</span> ast = UglifyJS.parse(orig_code);
+ast.figure_out_scope(); <span class="comment">//审查。注意！这行不能省！</span>
+</pre></td></tr></table></figure>
+
+<h3>UglifyJS.parse()</h3>
+<p>UglifyJS.parse(code, options)</p>
+<p><em>options</em> 是一个可选参数</p>
+<ul>
+<li>strict</li>
+<li>filename</li>
+<li>toplevel</li>
+</ul>
+<p>对源代码进行压缩</p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="keyword">var</span> compressor = UglifyJS.Compressor({<span class="comment">//Compressor options</span>
+	join_vars: <span class="literal">true</span>
+});
+ast = ast.transform(compressor);
+</pre></td></tr></table></figure>
+
+<p><a href="https://github.com/mishoo/UglifyJS2#compressor-options" target="_blank"><em>Compressor options</em></a></p>
+<ul>
+<li>join_vars</li>
+<li>properties</li>
+<li>conditionals</li>
+<li>…</li>
+</ul>
+<p>下面的操作，根据自己的需要调用</p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>ast.figure_out_scope(); <span class="comment">//再检查没用的代码</span>
+ast.mangle_names(); <span class="comment">//压缩名称</span>
+</pre></td></tr></table></figure>
+
+<h3>输出</h3>
+<p><em>方式1（较简单）</em></p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="keyword">var</span> final_code = ast.print_to_string({<span class="comment">//Beautifier options</span>
+    beautify: <span class="literal">true</span>
+});
+</pre></td></tr></table></figure>
+
+<p><em>方式2（较啰嗦）</em></p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="keyword">var</span> stream = UglifyJS.OutputStream({<span class="comment">//Beautifier options</span>
+    beautify: <span class="literal">true</span>
+});
+ast.print(stream);
+<span class="keyword">var</span> final_code = stream.toString();
+</pre></td></tr></table></figure>
+
+<p><a href="https://github.com/mishoo/UglifyJS2#beautifier-options" target="_blank"><em>Beautifier options</em></a></p>
+<ul>
+<li>beautify</li>
+<li>indent-level</li>
+<li>indent-start</li>
+<li>…</li>
+</ul>
+<h3>输出到文件</h3>
+<p>输出到项目目录下的 output.min.js 文件</p>
+<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>fs.writeFileSync(<span class="string">"output.min.js"</span>, orig_code);
+</pre></td></tr></table></figure>
+
+]]></content>
+    <category scheme="http://iefoay.cn/tags/UglifyJS/" term="UglifyJS"/>
+    <category scheme="http://iefoay.cn/tags/Node/" term="Node"/>
+    <category scheme="http://iefoay.cn/categories/JavaScript/" term="JavaScript"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[TextMate 快捷键]]></title>
     <link href="http://iefoay.cn/2013/TextMate-Keymap/"/>
     <id>http://iefoay.cn/2013/TextMate-Keymap/</id>
     <published>2013-12-27T00:00:00.000Z</published>
-    <updated>2013-12-27T07:30:16.000Z</updated>
+    <updated>2013-12-31T02:59:10.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -151,86 +370,88 @@
     <link href="http://iefoay.cn/2013/html-tag-to-glyph/"/>
     <id>http://iefoay.cn/2013/html-tag-to-glyph/</id>
     <published>2013-12-27T00:00:00.000Z</published>
-    <updated>2013-12-27T07:27:51.000Z</updated>
+    <updated>2013-12-31T03:00:06.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
 <th>字符</th>
-<th>html标签</th>
+<th>转义符</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>&nbsp;</td>
 <td>&amp;nbsp;</td>
+<td>不断行的空格</td>
 </tr>
 <tr>
 <td>&lt;</td>
 <td>&amp;lt;</td>
+<td></td>
 </tr>
 <tr>
 <td>&gt;</td>
 <td>&amp;gt;</td>
+<td></td>
 </tr>
 <tr>
 <td>&copy;</td>
 <td>&amp;copy;</td>
+<td>版权</td>
 </tr>
 <tr>
 <td>&amp;</td>
 <td>&amp;amp;</td>
+<td>&amp;符号</td>
 </tr>
 <tr>
 <td>&larr;</td>
 <td>&amp;larr;</td>
+<td></td>
 </tr>
 <tr>
 <td>&rarr;</td>
 <td>&amp;rarr;</td>
+<td></td>
 </tr>
 <tr>
 <td>&uarr;</td>
 <td>&amp;uarr;</td>
+<td></td>
 </tr>
 <tr>
 <td>&darr;</td>
 <td>&amp;darr;</td>
+<td></td>
 </tr>
 <tr>
-<td>&spades;</td>
-<td>&amp;spades;</td>
+<td>&#124;</td>
+<td>&amp;#124;</td>
+<td>坚杠</td>
 </tr>
 <tr>
-<td>&clubs;</td>
-<td>&amp;clubs;</td>
+<td>&times;</td>
+<td>&amp;times;</td>
+<td>乘号</td>
 </tr>
 <tr>
-<td>&hearts;</td>
-<td>&amp;hearts;</td>
-</tr>
-<tr>
-<td>&diams;</td>
-<td>&amp;diams;</td>
-</tr>
-<tr>
-<td>&otimes;</td>
-<td>&amp;otimes;</td>
-</tr>
-<tr>
-<td>&lowast;</td>
-<td>&amp;lowast;</td>
+<td>&divide;</td>
+<td>&amp;divide;</td>
+<td>除号</td>
 </tr>
 </tbody>
 </table>
 ]]></content>
     <category scheme="http://iefoay.cn/tags/转义字符/" term="转义字符"/>
+    <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[使用 SWFObject 嵌入 flash 内容]]></title>
     <link href="http://iefoay.cn/2013/use-swfobject-embed-flash-content/"/>
     <id>http://iefoay.cn/2013/use-swfobject-embed-flash-content/</id>
     <published>2013-12-23T00:00:00.000Z</published>
-    <updated>2013-12-27T09:45:03.000Z</updated>
+    <updated>2013-12-31T02:59:18.000Z</updated>
     <content type="html"><![CDATA[<h2>下载</h2>
 <p><a href="http://iefoay.cn/downloads/swfobject_2_2.zip">swfobject_2_2.zip</a></p>
 <h2>从一个最简单的例子开始</h2>
@@ -286,7 +507,7 @@
 </pre></td></tr></table></figure>
 
 <h2>方法</h2>
-<h3>swfobject.embedSWF</h3>
+<h3>swfobject.embedSWF()</h3>
 <p>swfobject.embedSWF(swfUrl, replaceElementId, width, height, version, expressInstallSwfurl, flashvars, params, attributes, callbackFn)</p>
 <p>更详细和列全面的了解一下，<code>swfobject.embedSWF</code>方法就是用来嵌入swf的</p>
 <p><strong>参数</strong></p>
@@ -508,11 +729,44 @@
     <category scheme="http://iefoay.cn/categories/flash/" term="flash"/>
   </entry>
   <entry>
+    <title type="html"><![CDATA[CMD命令]]></title>
+    <link href="http://iefoay.cn/2013/CMD-Command/"/>
+    <id>http://iefoay.cn/2013/CMD-Command/</id>
+    <published>2013-12-13T00:00:00.000Z</published>
+    <updated>2013-12-31T02:59:33.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>说明    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>d: d:\</td>
+<td>切换盘符</td>
+</tr>
+<tr>
+<td>cls</td>
+<td>清屏</td>
+</tr>
+<tr>
+<td>set</td>
+<td>查看环境变量</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category scheme="http://iefoay.cn/tags/CMD/" term="CMD"/>
+    <category scheme="http://iefoay.cn/tags/PC/" term="PC"/>
+    <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[Sublime Text 快捷键]]></title>
     <link href="http://iefoay.cn/2013/Sublime-Text-Keymap/"/>
     <id>http://iefoay.cn/2013/Sublime-Text-Keymap/</id>
     <published>2013-12-13T00:00:00.000Z</published>
-    <updated>2013-12-27T07:33:23.000Z</updated>
+    <updated>2013-12-31T02:59:08.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -626,13 +880,14 @@
 ]]></content>
     <category scheme="http://iefoay.cn/tags/Mac/" term="Mac"/>
     <category scheme="http://iefoay.cn/tags/快捷键/" term="快捷键"/>
+    <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Windows 运行打开命令]]></title>
     <link href="http://iefoay.cn/2013/Open-Command/"/>
     <id>http://iefoay.cn/2013/Open-Command/</id>
     <published>2013-12-13T00:00:00.000Z</published>
-    <updated>2013-12-27T07:33:27.000Z</updated>
+    <updated>2013-12-31T02:59:06.000Z</updated>
     <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -666,37 +921,6 @@
 ]]></content>
     <category scheme="http://iefoay.cn/tags/运行/" term="运行"/>
     <category scheme="http://iefoay.cn/tags/命令/" term="命令"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[CMD命令]]></title>
-    <link href="http://iefoay.cn/2013/CMD-Command/"/>
-    <id>http://iefoay.cn/2013/CMD-Command/</id>
-    <published>2013-12-13T00:00:00.000Z</published>
-    <updated>2013-12-27T07:33:39.000Z</updated>
-    <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>说明    </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>d: d:\</td>
-<td>切换盘符</td>
-</tr>
-<tr>
-<td>cls</td>
-<td>清屏</td>
-</tr>
-<tr>
-<td>set</td>
-<td>查看环境变量</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    <category scheme="http://iefoay.cn/tags/CMD/" term="CMD"/>
-    <category scheme="http://iefoay.cn/tags/PC/" term="PC"/>
+    <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
 </feed>
