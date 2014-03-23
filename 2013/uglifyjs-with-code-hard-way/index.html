@@ -25,7 +25,7 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"></script>
   <script src="/js/swfobject.js"></script>
 </head>
 
@@ -53,6 +53,18 @@
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
   <div class="post-content">
     <header>
       
@@ -68,32 +80,32 @@
     <div class="entry">
       
         <p>本文只是作为引导入门用。详细说明请查看<a href="https://github.com/mishoo/UglifyJS2#the-hard-way" target="_blank">官方的文档</a><br><a id="more"></a></p>
-<h2>准备工作</h2>
+<h2 id="准备工作">准备工作</h2>
 <ul>
 <li>已安装了node.js</li>
 <li>有uglify-js模块</li>
 </ul>
-<h2>写NodeJS代码</h2>
+<h2 id="写NodeJS代码">写NodeJS代码</h2>
 <p>创建一个名为 test.js 的文件，做为NodeJS主文件。开始写代码</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = require(<span class="string">"uglify-js"</span>);
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = <span class="built_in">require</span>(<span class="string">"uglify-js"</span>);
 </pre></td></tr></table></figure>
 
 <p>读取源代码内容</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
-</pre></td><td class="code"><pre><span class="keyword">var</span> fs = require(<span class="string">'fs'</span>);
+</pre></td><td class="code"><pre><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);
 <span class="keyword">var</span> orig_code = fs.readFileSync(<span class="string">"source.js"</span>);
 </pre></td></tr></table></figure>
 
 <p>解析源代码和审查</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre><span class="keyword">var</span> ast = UglifyJS.parse(orig_code);
 ast.figure_out_scope(); <span class="comment">//审查。注意！这行不能省！</span>
 </pre></td></tr></table></figure>
 
-<h3>UglifyJS.parse()</h3>
+<h3 id="UglifyJS-parse()">UglifyJS.parse()</h3>
 <p>UglifyJS.parse(code, options)</p>
 <p><em>options</em> 是一个可选参数</p>
 <ul>
@@ -102,7 +114,7 @@ ast.figure_out_scope(); <span class="comment">//审查。注意！这行不能�
 <li>toplevel</li>
 </ul>
 <p>对源代码进行压缩</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -120,15 +132,15 @@ ast = ast.transform(compressor);
 <li>…</li>
 </ul>
 <p>下面的操作，根据自己的需要调用</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre>ast.figure_out_scope(); <span class="comment">//再检查没用的代码</span>
 ast.mangle_names(); <span class="comment">//压缩名称</span>
 </pre></td></tr></table></figure>
 
-<h3>输出</h3>
+<h3 id="输出">输出</h3>
 <p><em>方式1（较简单）</em></p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre><span class="keyword">var</span> final_code = ast.print_to_string({<span class="comment">//Beautifier options</span>
@@ -137,7 +149,7 @@ ast.mangle_names(); <span class="comment">//压缩名称</span>
 </pre></td></tr></table></figure>
 
 <p><em>方式2（较啰嗦）</em></p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -156,9 +168,9 @@ ast.print(stream);
 <li>indent-start</li>
 <li>…</li>
 </ul>
-<h3>输出到文件</h3>
+<h3 id="输出到文件">输出到文件</h3>
 <p>输出到项目目录下的 output.min.js 文件</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>fs.writeFileSync(<span class="string">"output.min.js"</span>, orig_code);
 </pre></td></tr></table></figure>
 
@@ -263,6 +275,10 @@ var duoshuoQuery = {short_name:"iefoay"};
   <ul class="entry">
     
       <li>
+        <a href="/2014/zen-coding/">zen coding</a>
+      </li>
+    
+      <li>
         <a href="/2013/uglifyjs-with-code-simple-way/">以NodeJS代码的方式使用UglifyJS2 -The simple way</a>
       </li>
     
@@ -271,15 +287,11 @@ var duoshuoQuery = {short_name:"iefoay"};
       </li>
     
       <li>
-        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
-      </li>
-    
-      <li>
         <a href="/2013/html-tag-to-glyph/">常用的html转义字符</a>
       </li>
     
       <li>
-        <a href="/2013/use-swfobject-embed-flash-content/">使用 SWFObject 嵌入 flash 内容</a>
+        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
       </li>
     
   </ul>
@@ -297,7 +309,7 @@ var duoshuoQuery = {short_name:"iefoay"};
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2013 姚飞
+  &copy; 2014 姚飞
   
 </div>
 <div class="clearfix"></div></footer>

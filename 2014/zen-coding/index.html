@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>zen coding | iefoay</title>
+  <meta name="author" content="姚飞">
+  
+  <meta name="description" content="前端开发 Web SVG VML">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="zen coding"/>
+  <meta property="og:site_name" content="iefoay"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="iefoay" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/main.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  
+  <script src="/js/jquery-1.11.0.min.js"></script>
+  <script src="/js/swfobject.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">iefoay</a></h1>
+  <h2><a href="/">点点滴滴</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+      <li><a href="/atom.xml">RSS订阅</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-02-25T06:04:04.000Z"><a href="/2014/zen-coding/">2014-2-25</a></time>
+      
+      
+  
+    <h1 class="title">zen coding</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>meta:compat</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=7"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>link</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>link:touch</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"apple-touch-icon"</span> <span class="attribute">href</span>=<span class="value">"favicon.png"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>link:favicon</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"shortcut icon"</span> <span class="attribute">type</span>=<span class="value">"image/x-icon"</span> <span class="attribute">href</span>=<span class="value">"favicon.ico"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>link:rss</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"alternate"</span> <span class="attribute">type</span>=<span class="value">"application/rss+xml"</span> <span class="attribute">title</span>=<span class="value">"RSS"</span> <span class="attribute">href</span>=<span class="value">"rss.xml"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>script</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>script:src</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">""</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>cc:ie6</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="comment">&lt;!--[if lte IE 6]&gt;
+&lt;![endif]--&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>div#for-ie&gt;cc:ie6&gt;link+script:script</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"for-ie"</span>&gt;</span>
+	<span class="comment">&lt;!--[if lte IE 6]&gt;
+		&lt;link rel="stylesheet" href=""&gt;
+		&lt;script:script&gt;&lt;/script:script&gt;
+	&lt;![endif]--&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>div#i$-test.class$$*5</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i1-test"</span> <span class="attribute">class</span>=<span class="value">"class01"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i2-test"</span> <span class="attribute">class</span>=<span class="value">"class02"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i3-test"</span> <span class="attribute">class</span>=<span class="value">"class03"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i4-test"</span> <span class="attribute">class</span>=<span class="value">"class04"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i5-test"</span> <span class="attribute">class</span>=<span class="value">"class05"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>div#header&gt;ul#navigation&gt;li.item$*5&gt;a</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"header"</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"navigation"</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item1"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item2"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item3"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item4"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item5"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+	<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        
+
+	<!-- Baidu Button BEGIN -->
+	<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+		<a class="bds_tsina"></a>
+		<a class="bds_qzone"></a>
+		<a class="bds_tqq"></a>
+		<a class="bds_renren"></a>
+		<a class="bds_t163"></a>
+		<span class="bds_more"></span>
+		<a class="shareCount"></a>
+		</div>
+		<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6884758" ></script>
+		<script type="text/javascript" id="bdshell_js"></script>
+		<script type="text/javascript">
+		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+	</script>
+	<!-- Baidu Button END -->
+
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+
+<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"iefoay"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<!-- Duoshuo Comment END -->
+
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:iefoay.cn">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/JavaScript/">JavaScript</a><small>2</small></li>
+  
+    <li><a href="/categories/flash/">flash</a><small>2</small></li>
+  
+    <li><a href="/categories/开发工具/">开发工具</a><small>5</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/CMD/" style="font-size: 10.00px;">CMD</a><a href="/tags/Mac/" style="font-size: 20.00px;">Mac</a><a href="/tags/Node/" style="font-size: 20.00px;">Node</a><a href="/tags/PC/" style="font-size: 10.00px;">PC</a><a href="/tags/UglifyJS/" style="font-size: 20.00px;">UglifyJS</a><a href="/tags/flash/" style="font-size: 20.00px;">flash</a><a href="/tags/flashplayer/" style="font-size: 10.00px;">flashplayer</a><a href="/tags/命令/" style="font-size: 10.00px;">命令</a><a href="/tags/安全/" style="font-size: 10.00px;">安全</a><a href="/tags/快捷键/" style="font-size: 20.00px;">快捷键</a><a href="/tags/本地/" style="font-size: 10.00px;">本地</a><a href="/tags/转义字符/" style="font-size: 10.00px;">转义字符</a><a href="/tags/运行/" style="font-size: 10.00px;">运行</a>
+  </div>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2014/zen-coding/">zen coding</a>
+      </li>
+    
+      <li>
+        <a href="/2013/uglifyjs-with-code-simple-way/">以NodeJS代码的方式使用UglifyJS2 -The simple way</a>
+      </li>
+    
+      <li>
+        <a href="/2013/uglifyjs-with-code-hard-way/">以NodeJS代码的方式使用UglifyJS2 -The hard way</a>
+      </li>
+    
+      <li>
+        <a href="/2013/html-tag-to-glyph/">常用的html转义字符</a>
+      </li>
+    
+      <li>
+        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+  <h3 class="title">友情链接</h3>
+  <ul class="entry">
+  	<li><a href="http://vcharts.cn/" title="VCharts">vcharts.cn</a></li>
+  </ul>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 姚飞
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<!--返回顶部-->
+<script type="text/javascript">
+$(function(){
+    $("body").append("<a href='javascript:void(0);' id='gotop' onfocus='this.blur()'></a>");
+    $(window).bind('scroll',function() {
+        var w_scrollTop = $(window).scrollTop();
+        if(w_scrollTop > 150){
+            $("#gotop").fadeIn(300);
+        }
+        else if(w_scrollTop < 200){
+            $("#gotop").fadeOut(300);
+        }
+    });
+    $("#gotop").click(function() {
+        $("html,body").animate({scrollTop:0}, 300);
+        return false;
+    });    
+});
+</script>
+<!--返回顶部-->
+
+</body>
+</html>

@@ -25,7 +25,7 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"></script>
   <script src="/js/swfobject.js"></script>
 </head>
 
@@ -53,6 +53,18 @@
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
   <div class="post-content">
     <header>
       
@@ -67,22 +79,22 @@
     </header>
     <div class="entry">
       
-        <h2>下载</h2>
+        <h2 id="下载">下载</h2>
 <p><a href="http://iefoay.cn/downloads/swfobject_2_2.zip">swfobject_2_2.zip</a></p>
-<h2>从一个最简单的例子开始</h2>
-<h3> </h3>
-<figure class="highlight lang-html"><figcaption><span>第一步：创建一个标签，将被替换为flash内容</span></figcaption><table><tr><td class="gutter"><pre>1
+<h2 id="从一个最简单的例子开始">从一个最简单的例子开始</h2>
+<h3 id="_"> </h3>
+<figure class="highlight html"><figcaption><span>第一步：创建一个标签，将被替换为flash内容</span></figcaption><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"myContent"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
 
 <p><a id="more"></a></p>
-<h3> </h3>
-<figure class="highlight lang-html"><figcaption><span>第二步：导入swfbject.js库</span></figcaption><table><tr><td class="gutter"><pre>1
+<h3 id="_-1"> </h3>
+<figure class="highlight html"><figcaption><span>第二步：导入swfbject.js库</span></figcaption><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"swfobject.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-<h3> </h3>
-<figure class="highlight lang-html"><figcaption><span>第三步：使用 swfobject.embedSWF 方法嵌入flash文件</span></figcaption><table><tr><td class="gutter"><pre>1
+<h3 id="_-1"> </h3>
+<figure class="highlight html"><figcaption><span>第三步：使用 swfobject.embedSWF 方法嵌入flash文件</span></figcaption><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
@@ -121,8 +133,8 @@
 <span class="tag">&lt;/<span class="title">html</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-<h2>方法</h2>
-<h3>swfobject.embedSWF()</h3>
+<h2 id="方法">方法</h2>
+<h3 id="swfobject-embedSWF()">swfobject.embedSWF()</h3>
 <p>swfobject.embedSWF(swfUrl, replaceElementId, width, height, version, expressInstallSwfurl, flashvars, params, attributes, callbackFn)</p>
 <p>更详细和列全面的了解一下，<code>swfobject.embedSWF</code>方法就是用来嵌入swf的</p>
 <p><strong>参数</strong></p>
@@ -215,7 +227,7 @@
 </ul>
 <p><em>attributes</em></p>
 <p>如需要用js访问flash对象时，为了浏览器兼容性，<strong>id</strong> 和 <strong>name</strong> 两个属性都应该设置，且用同样的值</p>
-<h3>最终结果：</h3>
+<h3 id="最终结果：">最终结果：</h3>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -282,7 +294,7 @@
 <span class="tag">&lt;/<span class="title">html</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-<h2>参考</h2>
+<h2 id="参考">参考</h2>
 <p>官方首页：<a href="http://code.google.com/p/swfobject/" target="_blank">http://code.google.com/p/swfobject/</a><br>帮助文档：<a href="http://code.google.com/p/swfobject/wiki/documentation" target="_blank">http://code.google.com/p/swfobject/wiki/documentation</a><br>API文档：<a href="http://code.google.com/p/swfobject/wiki/api" target="_blank">http://code.google.com/p/swfobject/wiki/api</a></p>
 
       
@@ -385,6 +397,10 @@ var duoshuoQuery = {short_name:"iefoay"};
   <ul class="entry">
     
       <li>
+        <a href="/2014/zen-coding/">zen coding</a>
+      </li>
+    
+      <li>
         <a href="/2013/uglifyjs-with-code-simple-way/">以NodeJS代码的方式使用UglifyJS2 -The simple way</a>
       </li>
     
@@ -393,15 +409,11 @@ var duoshuoQuery = {short_name:"iefoay"};
       </li>
     
       <li>
-        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
-      </li>
-    
-      <li>
         <a href="/2013/html-tag-to-glyph/">常用的html转义字符</a>
       </li>
     
       <li>
-        <a href="/2013/use-swfobject-embed-flash-content/">使用 SWFObject 嵌入 flash 内容</a>
+        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
       </li>
     
   </ul>
@@ -419,7 +431,7 @@ var duoshuoQuery = {short_name:"iefoay"};
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2013 姚飞
+  &copy; 2014 姚飞
   
 </div>
 <div class="clearfix"></div></footer>

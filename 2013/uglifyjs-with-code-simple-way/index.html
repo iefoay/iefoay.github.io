@@ -25,7 +25,7 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"></script>
   <script src="/js/swfobject.js"></script>
 </head>
 
@@ -53,6 +53,18 @@
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
   <div class="post-content">
     <header>
       
@@ -69,31 +81,31 @@
       
         <p>UglifyJS 是一个 JavaScript 的打包、压缩工具。建议使用第2个版：UglifyJS2，详情见<a href="https://github.com/mishoo/UglifyJS2" target="_blank">Github</a>。<br>一般来说，使用简单的方式，就能满足我们的需求。</p>
 <p><a id="more"></a></p>
-<h2>安装</h2>
+<h2 id="安装">安装</h2>
 <p>这里使用 <em>命令行</em> 的方式安装 UglifyJS2。其实就是把 <em>uglify-js</em> 模块下载到你的当前目录。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
-</pre></td><td class="code"><pre><span class="title">cd</span> your/project/path
-<span class="title">npm</span> install uglify-js
+</pre></td><td class="code"><pre>cd your/<span class="keyword">project</span>/path
+npm <span class="keyword">install</span> uglify-js
 </pre></td></tr></table></figure>
 
-<h2>写NodeJS代码</h2>
+<h2 id="写NodeJS代码">写NodeJS代码</h2>
 <p>创建一个名为 test.js 的文件，做为NodeJS主文件。开始写代码。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
-</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = require(<span class="string">"uglify-js"</span>);
+</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = <span class="built_in">require</span>(<span class="string">"uglify-js"</span>);
 <span class="keyword">var</span> result = UglifyJS.minify(<span class="string">"source.js"</span>);
 console.log(result.code);
 </pre></td></tr></table></figure>
 
 <p>切换到<em>使命行</em>，看看输出结果</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">node</span> test.js
+</pre></td><td class="code"><pre>node test<span class="preprocessor">.js</span>
 </pre></td></tr></table></figure>
 
-<h2>方法说明</h2>
-<h3>UglifyJS.minify()</h3>
+<h2 id="方法说明">方法说明</h2>
+<h3 id="UglifyJS-minify()">UglifyJS.minify()</h3>
 <p>UglifyJS.minify(input, option)</p>
 <p><strong>参数</strong></p>
 <table>
@@ -121,7 +133,7 @@ console.log(result.code);
 </tbody>
 </table>
 <p><em>option</em></p>
-<figure class="highlight lang-js"><figcaption><span>option 参考配置表</span></figcaption><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><figcaption><span>option 参考配置表</span></figcaption><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -154,12 +166,12 @@ console.log(result.code);
 </pre></td></tr></table></figure>
 
 <p>可以组合多个文件：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="keyword">var</span> result = UglifyJS.minify([ <span class="string">"file1.js"</span>, <span class="string">"file2.js"</span>, <span class="string">"file3.js"</span> ]);
 </pre></td></tr></table></figure>
 
 <p>代码源也可以是字符串：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -270,6 +282,10 @@ var duoshuoQuery = {short_name:"iefoay"};
   <ul class="entry">
     
       <li>
+        <a href="/2014/zen-coding/">zen coding</a>
+      </li>
+    
+      <li>
         <a href="/2013/uglifyjs-with-code-simple-way/">以NodeJS代码的方式使用UglifyJS2 -The simple way</a>
       </li>
     
@@ -278,15 +294,11 @@ var duoshuoQuery = {short_name:"iefoay"};
       </li>
     
       <li>
-        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
-      </li>
-    
-      <li>
         <a href="/2013/html-tag-to-glyph/">常用的html转义字符</a>
       </li>
     
       <li>
-        <a href="/2013/use-swfobject-embed-flash-content/">使用 SWFObject 嵌入 flash 内容</a>
+        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
       </li>
     
   </ul>
@@ -304,7 +316,7 @@ var duoshuoQuery = {short_name:"iefoay"};
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2013 姚飞
+  &copy; 2014 姚飞
   
 </div>
 <div class="clearfix"></div></footer>

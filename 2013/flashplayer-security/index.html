@@ -25,7 +25,7 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="/js/jquery-1.11.0.min.js"></script>
   <script src="/js/swfobject.js"></script>
 </head>
 
@@ -53,6 +53,18 @@
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
   <div class="post-content">
     <header>
       
@@ -75,14 +87,14 @@
 <p><p id="flashinfo"></p></p>
 <script type="text/javascript">var a=swfobject.ua.pv;if(a[0]){var info=a[0];}else{info='<b>此浏览器居然没有安装 Flash Player插件！！</b>';}$('<strong>此浏览器使用的 Flash Player 版本：'+a.join('.')+'</strong>').appendTo('#flashinfo');</script>
 
-<h2>开始设置</h2>
+<h2 id="开始设置">开始设置</h2>
 <p>在任意一个 Flash Player 区域中，点击右键 - <strong>全局设置</strong>。注意：由于不同的 Flash Player 版本，会有两种不同的情况出现。<br><a id="more"></a></p>
 <ol>
 <li>跳转到 <a href="http://www.macromedia.com/support/documentation/cn/flashplayer/help/settings_manager04.html" target="_blank">官方的设置页</a></li>
 <li>弹出 <strong>Flash Player 设置管理器</strong> 面板</li>
 </ol>
 <p>根据自己的出现的情况查看下面的图解即可</p>
-<h2>通过官方的设置页</h2>
+<h2 id="通过官方的设置页">通过官方的设置页</h2>
 <p>此页面在国内访问可能有点慢，耐心等待一下。右边有个设置管理器面板，是flash内容，如果没安装插件会提示你安装。</p>
 <ol>
 <li><p>确认自己在 <strong>“全局安全设置”面板</strong> 的标签。<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_web1.png" alt="网页"></p>
@@ -96,7 +108,7 @@
 <li><p>刷新刚才的包涵flash的页面。</p>
 </li>
 </ol>
-<h2>通过 Flash Player 设置管理器</h2>
+<h2 id="通过_Flash_Player_设置管理器">通过 Flash Player 设置管理器</h2>
 <ol>
 <li><p>点击 <strong>高级</strong> 标签。找到 <strong>受信任位置设置</strong> ，在稍下面的位置，可能需要一下滚动条才能看到 :)<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_1.png" alt="设置面板"></p>
 </li>
@@ -210,6 +222,10 @@ var duoshuoQuery = {short_name:"iefoay"};
   <ul class="entry">
     
       <li>
+        <a href="/2014/zen-coding/">zen coding</a>
+      </li>
+    
+      <li>
         <a href="/2013/uglifyjs-with-code-simple-way/">以NodeJS代码的方式使用UglifyJS2 -The simple way</a>
       </li>
     
@@ -218,15 +234,11 @@ var duoshuoQuery = {short_name:"iefoay"};
       </li>
     
       <li>
-        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
-      </li>
-    
-      <li>
         <a href="/2013/html-tag-to-glyph/">常用的html转义字符</a>
       </li>
     
       <li>
-        <a href="/2013/use-swfobject-embed-flash-content/">使用 SWFObject 嵌入 flash 内容</a>
+        <a href="/2013/TextMate-Keymap/">TextMate 快捷键</a>
       </li>
     
   </ul>
@@ -244,7 +256,7 @@ var duoshuoQuery = {short_name:"iefoay"};
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2013 姚飞
+  &copy; 2014 姚飞
   
 </div>
 <div class="clearfix"></div></footer>

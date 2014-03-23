@@ -4,13 +4,112 @@
   <subtitle><![CDATA[点点滴滴]]></subtitle>
   <link href="http://iefoay.cn/atom.xml" rel="self"/>
   <link href="http://iefoay.cn"/>
-  <updated>2013-12-31T08:01:04.637Z</updated>
+  <updated>2014-03-23T06:20:52.563Z</updated>
   <id>http://iefoay.cn/</id>
   <author>
     <name><![CDATA[姚飞]]></name>
     <email><![CDATA[oiue@163.com]]></email>
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
+  <entry>
+    <title type="html"><![CDATA[zen coding]]></title>
+    <link href="http://iefoay.cn/2014/zen-coding/"/>
+    <id>http://iefoay.cn/2014/zen-coding/</id>
+    <published>2014-02-25T06:04:04.000Z</published>
+    <updated>2014-02-25T08:51:10.000Z</updated>
+    <content type="html"><![CDATA[<p>meta:compat</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="value">"IE=7"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>link</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>link:touch</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"apple-touch-icon"</span> <span class="attribute">href</span>=<span class="value">"favicon.png"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>link:favicon</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"shortcut icon"</span> <span class="attribute">type</span>=<span class="value">"image/x-icon"</span> <span class="attribute">href</span>=<span class="value">"favicon.ico"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>link:rss</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"alternate"</span> <span class="attribute">type</span>=<span class="value">"application/rss+xml"</span> <span class="attribute">title</span>=<span class="value">"RSS"</span> <span class="attribute">href</span>=<span class="value">"rss.xml"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>script</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>script:src</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">""</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>cc:ie6</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="comment">&lt;!--[if lte IE 6]&gt;
+&lt;![endif]--&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>div#for-ie&gt;cc:ie6&gt;link+script:script</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"for-ie"</span>&gt;</span>
+	<span class="comment">&lt;!--[if lte IE 6]&gt;
+		&lt;link rel="stylesheet" href=""&gt;
+		&lt;script:script&gt;&lt;/script:script&gt;
+	&lt;![endif]--&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>div#i$-test.class$$*5</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i1-test"</span> <span class="attribute">class</span>=<span class="value">"class01"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i2-test"</span> <span class="attribute">class</span>=<span class="value">"class02"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i3-test"</span> <span class="attribute">class</span>=<span class="value">"class03"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i4-test"</span> <span class="attribute">class</span>=<span class="value">"class04"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"i5-test"</span> <span class="attribute">class</span>=<span class="value">"class05"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>div#header&gt;ul#navigation&gt;li.item$*5&gt;a</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"header"</span>&gt;</span>
+	<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"navigation"</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item1"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item2"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item3"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item4"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+		<span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"item5"</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+	<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
   <entry>
     <title type="html"><![CDATA[以NodeJS代码的方式使用UglifyJS2 -The simple way]]></title>
     <link href="http://iefoay.cn/2013/uglifyjs-with-code-simple-way/"/>
@@ -19,31 +118,31 @@
     <updated>2013-12-31T03:02:18.000Z</updated>
     <content type="html"><![CDATA[<p>UglifyJS 是一个 JavaScript 的打包、压缩工具。建议使用第2个版：UglifyJS2，详情见<a href="https://github.com/mishoo/UglifyJS2" target="_blank">Github</a>。<br>一般来说，使用简单的方式，就能满足我们的需求。</p>
 <p><a id="more"></a></p>
-<h2>安装</h2>
+<h2 id="安装">安装</h2>
 <p>这里使用 <em>命令行</em> 的方式安装 UglifyJS2。其实就是把 <em>uglify-js</em> 模块下载到你的当前目录。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
-</pre></td><td class="code"><pre><span class="title">cd</span> your/project/path
-<span class="title">npm</span> install uglify-js
+</pre></td><td class="code"><pre>cd your/<span class="keyword">project</span>/path
+npm <span class="keyword">install</span> uglify-js
 </pre></td></tr></table></figure>
 
-<h2>写NodeJS代码</h2>
+<h2 id="写NodeJS代码">写NodeJS代码</h2>
 <p>创建一个名为 test.js 的文件，做为NodeJS主文件。开始写代码。</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
-</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = require(<span class="string">"uglify-js"</span>);
+</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = <span class="built_in">require</span>(<span class="string">"uglify-js"</span>);
 <span class="keyword">var</span> result = UglifyJS.minify(<span class="string">"source.js"</span>);
 console.log(result.code);
 </pre></td></tr></table></figure>
 
 <p>切换到<em>使命行</em>，看看输出结果</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="title">node</span> test.js
+</pre></td><td class="code"><pre>node test<span class="preprocessor">.js</span>
 </pre></td></tr></table></figure>
 
-<h2>方法说明</h2>
-<h3>UglifyJS.minify()</h3>
+<h2 id="方法说明">方法说明</h2>
+<h3 id="UglifyJS-minify()">UglifyJS.minify()</h3>
 <p>UglifyJS.minify(input, option)</p>
 <p><strong>参数</strong></p>
 <table>
@@ -71,7 +170,7 @@ console.log(result.code);
 </tbody>
 </table>
 <p><em>option</em></p>
-<figure class="highlight lang-js"><figcaption><span>option 参考配置表</span></figcaption><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><figcaption><span>option 参考配置表</span></figcaption><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -104,12 +203,12 @@ console.log(result.code);
 </pre></td></tr></table></figure>
 
 <p>可以组合多个文件：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="keyword">var</span> result = UglifyJS.minify([ <span class="string">"file1.js"</span>, <span class="string">"file2.js"</span>, <span class="string">"file3.js"</span> ]);
 </pre></td></tr></table></figure>
 
 <p>代码源也可以是字符串：</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -131,32 +230,32 @@ console.log(result.code);
     <published>2013-12-30T05:53:34.000Z</published>
     <updated>2013-12-31T03:02:32.000Z</updated>
     <content type="html"><![CDATA[<p>本文只是作为引导入门用。详细说明请查看<a href="https://github.com/mishoo/UglifyJS2#the-hard-way" target="_blank">官方的文档</a><br><a id="more"></a></p>
-<h2>准备工作</h2>
+<h2 id="准备工作">准备工作</h2>
 <ul>
 <li>已安装了node.js</li>
 <li>有uglify-js模块</li>
 </ul>
-<h2>写NodeJS代码</h2>
+<h2 id="写NodeJS代码">写NodeJS代码</h2>
 <p>创建一个名为 test.js 的文件，做为NodeJS主文件。开始写代码</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = require(<span class="string">"uglify-js"</span>);
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="keyword">var</span> UglifyJS = <span class="built_in">require</span>(<span class="string">"uglify-js"</span>);
 </pre></td></tr></table></figure>
 
 <p>读取源代码内容</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
-</pre></td><td class="code"><pre><span class="keyword">var</span> fs = require(<span class="string">'fs'</span>);
+</pre></td><td class="code"><pre><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);
 <span class="keyword">var</span> orig_code = fs.readFileSync(<span class="string">"source.js"</span>);
 </pre></td></tr></table></figure>
 
 <p>解析源代码和审查</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre><span class="keyword">var</span> ast = UglifyJS.parse(orig_code);
 ast.figure_out_scope(); <span class="comment">//审查。注意！这行不能省！</span>
 </pre></td></tr></table></figure>
 
-<h3>UglifyJS.parse()</h3>
+<h3 id="UglifyJS-parse()">UglifyJS.parse()</h3>
 <p>UglifyJS.parse(code, options)</p>
 <p><em>options</em> 是一个可选参数</p>
 <ul>
@@ -165,7 +264,7 @@ ast.figure_out_scope(); <span class="comment">//审查。注意！这行不能�
 <li>toplevel</li>
 </ul>
 <p>对源代码进行压缩</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -183,15 +282,15 @@ ast = ast.transform(compressor);
 <li>…</li>
 </ul>
 <p>下面的操作，根据自己的需要调用</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre>ast.figure_out_scope(); <span class="comment">//再检查没用的代码</span>
 ast.mangle_names(); <span class="comment">//压缩名称</span>
 </pre></td></tr></table></figure>
 
-<h3>输出</h3>
+<h3 id="输出">输出</h3>
 <p><em>方式1（较简单）</em></p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre><span class="keyword">var</span> final_code = ast.print_to_string({<span class="comment">//Beautifier options</span>
@@ -200,7 +299,7 @@ ast.mangle_names(); <span class="comment">//压缩名称</span>
 </pre></td></tr></table></figure>
 
 <p><em>方式2（较啰嗦）</em></p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -219,9 +318,9 @@ ast.print(stream);
 <li>indent-start</li>
 <li>…</li>
 </ul>
-<h3>输出到文件</h3>
+<h3 id="输出到文件">输出到文件</h3>
 <p>输出到项目目录下的 output.min.js 文件</p>
-<figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
+<figure class="highlight js"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>fs.writeFileSync(<span class="string">"output.min.js"</span>, orig_code);
 </pre></td></tr></table></figure>
 
@@ -229,6 +328,87 @@ ast.print(stream);
     <category scheme="http://iefoay.cn/tags/UglifyJS/" term="UglifyJS"/>
     <category scheme="http://iefoay.cn/tags/Node/" term="Node"/>
     <category scheme="http://iefoay.cn/categories/JavaScript/" term="JavaScript"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[常用的html转义字符]]></title>
+    <link href="http://iefoay.cn/2013/html-tag-to-glyph/"/>
+    <id>http://iefoay.cn/2013/html-tag-to-glyph/</id>
+    <published>2013-12-27T00:00:00.000Z</published>
+    <updated>2013-12-31T03:00:06.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>转义符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&amp;nbsp;</td>
+<td>不断行的空格</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>&amp;lt;</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>&amp;gt;</td>
+<td></td>
+</tr>
+<tr>
+<td>&copy;</td>
+<td>&amp;copy;</td>
+<td>版权</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>&amp;amp;</td>
+<td>&amp;符号</td>
+</tr>
+<tr>
+<td>&larr;</td>
+<td>&amp;larr;</td>
+<td></td>
+</tr>
+<tr>
+<td>&rarr;</td>
+<td>&amp;rarr;</td>
+<td></td>
+</tr>
+<tr>
+<td>&uarr;</td>
+<td>&amp;uarr;</td>
+<td></td>
+</tr>
+<tr>
+<td>&darr;</td>
+<td>&amp;darr;</td>
+<td></td>
+</tr>
+<tr>
+<td>&#124;</td>
+<td>&amp;#124;</td>
+<td>坚杠</td>
+</tr>
+<tr>
+<td>&times;</td>
+<td>&amp;times;</td>
+<td>乘号</td>
+</tr>
+<tr>
+<td>&divide;</td>
+<td>&amp;divide;</td>
+<td>除号</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category scheme="http://iefoay.cn/tags/转义字符/" term="转义字符"/>
+    <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[TextMate 快捷键]]></title>
@@ -328,7 +508,7 @@ ast.print(stream);
 </table>
 <a id="more"></a>
 
-<h3>其它技巧</h3>
+<h3 id="其它技巧">其它技巧</h3>
 <p>状态栏 右下角 快速跳转</p>
 <p><strong>说明</strong></p>
 <table>
@@ -366,108 +546,27 @@ ast.print(stream);
     <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
   <entry>
-    <title type="html"><![CDATA[常用的html转义字符]]></title>
-    <link href="http://iefoay.cn/2013/html-tag-to-glyph/"/>
-    <id>http://iefoay.cn/2013/html-tag-to-glyph/</id>
-    <published>2013-12-27T00:00:00.000Z</published>
-    <updated>2013-12-31T03:00:06.000Z</updated>
-    <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>字符</th>
-<th>转义符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&nbsp;</td>
-<td>&amp;nbsp;</td>
-<td>不断行的空格</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>&amp;lt;</td>
-<td></td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>&amp;gt;</td>
-<td></td>
-</tr>
-<tr>
-<td>&copy;</td>
-<td>&amp;copy;</td>
-<td>版权</td>
-</tr>
-<tr>
-<td>&amp;</td>
-<td>&amp;amp;</td>
-<td>&amp;符号</td>
-</tr>
-<tr>
-<td>&larr;</td>
-<td>&amp;larr;</td>
-<td></td>
-</tr>
-<tr>
-<td>&rarr;</td>
-<td>&amp;rarr;</td>
-<td></td>
-</tr>
-<tr>
-<td>&uarr;</td>
-<td>&amp;uarr;</td>
-<td></td>
-</tr>
-<tr>
-<td>&darr;</td>
-<td>&amp;darr;</td>
-<td></td>
-</tr>
-<tr>
-<td>&#124;</td>
-<td>&amp;#124;</td>
-<td>坚杠</td>
-</tr>
-<tr>
-<td>&times;</td>
-<td>&amp;times;</td>
-<td>乘号</td>
-</tr>
-<tr>
-<td>&divide;</td>
-<td>&amp;divide;</td>
-<td>除号</td>
-</tr>
-</tbody>
-</table>
-]]></content>
-    <category scheme="http://iefoay.cn/tags/转义字符/" term="转义字符"/>
-    <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
-  </entry>
-  <entry>
     <title type="html"><![CDATA[使用 SWFObject 嵌入 flash 内容]]></title>
     <link href="http://iefoay.cn/2013/use-swfobject-embed-flash-content/"/>
     <id>http://iefoay.cn/2013/use-swfobject-embed-flash-content/</id>
     <published>2013-12-23T00:00:00.000Z</published>
     <updated>2013-12-31T02:59:18.000Z</updated>
-    <content type="html"><![CDATA[<h2>下载</h2>
+    <content type="html"><![CDATA[<h2 id="下载">下载</h2>
 <p><a href="http://iefoay.cn/downloads/swfobject_2_2.zip">swfobject_2_2.zip</a></p>
-<h2>从一个最简单的例子开始</h2>
-<h3> </h3>
-<figure class="highlight lang-html"><figcaption><span>第一步：创建一个标签，将被替换为flash内容</span></figcaption><table><tr><td class="gutter"><pre>1
+<h2 id="从一个最简单的例子开始">从一个最简单的例子开始</h2>
+<h3 id="_"> </h3>
+<figure class="highlight html"><figcaption><span>第一步：创建一个标签，将被替换为flash内容</span></figcaption><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"myContent"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
 
 <p><a id="more"></a></p>
-<h3> </h3>
-<figure class="highlight lang-html"><figcaption><span>第二步：导入swfbject.js库</span></figcaption><table><tr><td class="gutter"><pre>1
+<h3 id="_-1"> </h3>
+<figure class="highlight html"><figcaption><span>第二步：导入swfbject.js库</span></figcaption><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"swfobject.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-<h3> </h3>
-<figure class="highlight lang-html"><figcaption><span>第三步：使用 swfobject.embedSWF 方法嵌入flash文件</span></figcaption><table><tr><td class="gutter"><pre>1
+<h3 id="_-1"> </h3>
+<figure class="highlight html"><figcaption><span>第三步：使用 swfobject.embedSWF 方法嵌入flash文件</span></figcaption><table><tr><td class="gutter"><pre>1
 2
 3
 </pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
@@ -506,8 +605,8 @@ ast.print(stream);
 <span class="tag">&lt;/<span class="title">html</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-<h2>方法</h2>
-<h3>swfobject.embedSWF()</h3>
+<h2 id="方法">方法</h2>
+<h3 id="swfobject-embedSWF()">swfobject.embedSWF()</h3>
 <p>swfobject.embedSWF(swfUrl, replaceElementId, width, height, version, expressInstallSwfurl, flashvars, params, attributes, callbackFn)</p>
 <p>更详细和列全面的了解一下，<code>swfobject.embedSWF</code>方法就是用来嵌入swf的</p>
 <p><strong>参数</strong></p>
@@ -600,7 +699,7 @@ ast.print(stream);
 </ul>
 <p><em>attributes</em></p>
 <p>如需要用js访问flash对象时，为了浏览器兼容性，<strong>id</strong> 和 <strong>name</strong> 两个属性都应该设置，且用同样的值</p>
-<h3>最终结果：</h3>
+<h3 id="最终结果：">最终结果：</h3>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -667,7 +766,7 @@ ast.print(stream);
 <span class="tag">&lt;/<span class="title">html</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-<h2>参考</h2>
+<h2 id="参考">参考</h2>
 <p>官方首页：<a href="http://code.google.com/p/swfobject/" target="_blank">http://code.google.com/p/swfobject/</a><br>帮助文档：<a href="http://code.google.com/p/swfobject/wiki/documentation" target="_blank">http://code.google.com/p/swfobject/wiki/documentation</a><br>API文档：<a href="http://code.google.com/p/swfobject/wiki/api" target="_blank">http://code.google.com/p/swfobject/wiki/api</a></p>
 ]]></content>
     <category scheme="http://iefoay.cn/tags/flash/" term="flash"/>
@@ -687,14 +786,14 @@ ast.print(stream);
 <p><p id="flashinfo"></p></p>
 <script type="text/javascript">var a=swfobject.ua.pv;if(a[0]){var info=a[0];}else{info='<b>此浏览器居然没有安装 Flash Player插件！！</b>';}$('<strong>此浏览器使用的 Flash Player 版本：'+a.join('.')+'</strong>').appendTo('#flashinfo');</script>
 
-<h2>开始设置</h2>
+<h2 id="开始设置">开始设置</h2>
 <p>在任意一个 Flash Player 区域中，点击右键 - <strong>全局设置</strong>。注意：由于不同的 Flash Player 版本，会有两种不同的情况出现。<br><a id="more"></a></p>
 <ol>
 <li>跳转到 <a href="http://www.macromedia.com/support/documentation/cn/flashplayer/help/settings_manager04.html" target="_blank">官方的设置页</a></li>
 <li>弹出 <strong>Flash Player 设置管理器</strong> 面板</li>
 </ol>
 <p>根据自己的出现的情况查看下面的图解即可</p>
-<h2>通过官方的设置页</h2>
+<h2 id="通过官方的设置页">通过官方的设置页</h2>
 <p>此页面在国内访问可能有点慢，耐心等待一下。右边有个设置管理器面板，是flash内容，如果没安装插件会提示你安装。</p>
 <ol>
 <li><p>确认自己在 <strong>“全局安全设置”面板</strong> 的标签。<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_web1.png" alt="网页"></p>
@@ -708,7 +807,7 @@ ast.print(stream);
 <li><p>刷新刚才的包涵flash的页面。</p>
 </li>
 </ol>
-<h2>通过 Flash Player 设置管理器</h2>
+<h2 id="通过_Flash_Player_设置管理器">通过 Flash Player 设置管理器</h2>
 <ol>
 <li><p>点击 <strong>高级</strong> 标签。找到 <strong>受信任位置设置</strong> ，在稍下面的位置，可能需要一下滚动条才能看到 :)<br><img src="http://iefoay.cn/img/flashplayer/flashplayer_1.png" alt="设置面板"></p>
 </li>
@@ -727,6 +826,192 @@ ast.print(stream);
     <category scheme="http://iefoay.cn/tags/安全/" term="安全"/>
     <category scheme="http://iefoay.cn/tags/本地/" term="本地"/>
     <category scheme="http://iefoay.cn/categories/flash/" term="flash"/>
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[Sublime Text 快捷键]]></title>
+    <link href="http://iefoay.cn/2013/Sublime-Text-Keymap/"/>
+    <id>http://iefoay.cn/2013/Sublime-Text-Keymap/</id>
+    <published>2013-12-13T00:00:00.000Z</published>
+    <updated>2014-01-27T02:35:08.000Z</updated>
+    <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>PC</th>
+<th>Mac</th>
+<th>说明    </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl+Shift+T</td>
+<td>Shift+Cmd+T</td>
+<td>重新打开刚才关闭的标签</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+Shift+P</td>
+<td></td>
+<td>使命面板</td>
+</tr>
+<tr>
+<td>Ctrl+P</td>
+<td>Shift+Cmd+P</td>
+<td>搜索文件，支持简写路径和文件名。@方法:行#词</td>
+</tr>
+<tr>
+<td>Ctrl+R</td>
+<td>Cmd+R</td>
+<td>跳转到方法</td>
+</tr>
+<tr>
+<td>Ctrl+G</td>
+<td>Cmd+G</td>
+<td>跳转到行</td>
+</tr>
+<tr>
+<td>Ctrl+M</td>
+<td></td>
+<td>跳转到括号首尾</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+F</td>
+<td></td>
+<td>查找</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+F</td>
+<td>Shift+Cmd+F</td>
+<td>在项目中查找，替换</td>
+</tr>
+<tr>
+<td>Ctrl+H</td>
+<td></td>
+<td>替换</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+/</td>
+<td></td>
+<td>注释 / 解除注释</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+/</td>
+<td></td>
+<td>块注释</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+D</td>
+<td></td>
+<td>选择单词，可重复选择</td>
+</tr>
+<tr>
+<td>Alt+F3</td>
+<td>Ctrl+Cmd+G</td>
+<td>选择所有相同的词</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+点击</td>
+<td></td>
+<td>多选</td>
+</tr>
+<tr>
+<td>Shift+右键拖动</td>
+<td></td>
+<td>竖向选择</td>
+</tr>
+<tr>
+<td>Ctrl+L</td>
+<td></td>
+<td>选择行</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+L</td>
+<td></td>
+<td>进入编辑多行状态</td>
+</tr>
+<tr>
+<td>Ctrl+J</td>
+<td></td>
+<td>合并为一行</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alt+.</td>
+<td></td>
+<td>闭合标签</td>
+</tr>
+<tr>
+<td>Ctrl+Space</td>
+<td></td>
+<td>自动完成</td>
+</tr>
+<tr>
+<td>Ctrl+K+K</td>
+<td></td>
+<td>从光标处删除至行尾</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+K</td>
+<td></td>
+<td>删除整行</td>
+</tr>
+<tr>
+<td>Ctrl+K+Backspace</td>
+<td></td>
+<td>从光标处删除至行首</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+Backspace</td>
+<td></td>
+<td>从光标处删除至行首</td>
+</tr>
+<tr>
+<td>Ctrl+Enter</td>
+<td></td>
+<td>在此行下面插入一行</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+Enter</td>
+<td></td>
+<td>在此行上面插入一行</td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+
+<h2 id="其它技巧">其它技巧</h2>
+<p>查找多个连续空格：” +”<br>如果鼠标有前进后退键，可以用它们来切换标签</p>
+]]></content>
+    <category scheme="http://iefoay.cn/tags/Mac/" term="Mac"/>
+    <category scheme="http://iefoay.cn/tags/快捷键/" term="快捷键"/>
+    <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
   <entry>
     <title type="html"><![CDATA[Windows 运行打开命令]]></title>
@@ -767,127 +1052,6 @@ ast.print(stream);
 ]]></content>
     <category scheme="http://iefoay.cn/tags/运行/" term="运行"/>
     <category scheme="http://iefoay.cn/tags/命令/" term="命令"/>
-    <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
-  </entry>
-  <entry>
-    <title type="html"><![CDATA[Sublime Text 快捷键]]></title>
-    <link href="http://iefoay.cn/2013/Sublime-Text-Keymap/"/>
-    <id>http://iefoay.cn/2013/Sublime-Text-Keymap/</id>
-    <published>2013-12-13T00:00:00.000Z</published>
-    <updated>2013-12-31T02:59:08.000Z</updated>
-    <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>PC</th>
-<th>Mac</th>
-<th>说明    </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ctrl+P</td>
-<td></td>
-<td>搜索文件，支持简写路径和文件名</td>
-</tr>
-<tr>
-<td>Ctrl+R</td>
-<td></td>
-<td>跳转到方法</td>
-</tr>
-<tr>
-<td>Ctrl+F</td>
-<td></td>
-<td>查找</td>
-</tr>
-<tr>
-<td>Ctrl+Shift+F</td>
-<td></td>
-<td>查找，替换</td>
-</tr>
-<tr>
-<td>Ctrl+H</td>
-<td></td>
-<td>查找，替换</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Ctrl+G</td>
-<td></td>
-<td>跳转到行</td>
-</tr>
-<tr>
-<td>Ctrl+M</td>
-<td></td>
-<td>跳转到括号首尾</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Ctrl+/</td>
-<td></td>
-<td>注释 / 解除注释</td>
-</tr>
-<tr>
-<td>Ctrl+Shift+/</td>
-<td></td>
-<td>块注释</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Ctrl+D</td>
-<td></td>
-<td>选择单词，可重复选择</td>
-</tr>
-<tr>
-<td>Alt+F3</td>
-<td></td>
-<td>选择所有相同的词</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Ctrl+点击</td>
-<td></td>
-<td>多选</td>
-</tr>
-<tr>
-<td>Shift+右键拖动</td>
-<td></td>
-<td>修改列</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Alt+.</td>
-<td></td>
-<td>闭合标签</td>
-</tr>
-</tbody>
-</table>
-<a id="more"></a>
-
-<h2>其它技巧</h2>
-<p>如果鼠标有前进后退键，可以用它们来切换标签</p>
-]]></content>
-    <category scheme="http://iefoay.cn/tags/Mac/" term="Mac"/>
-    <category scheme="http://iefoay.cn/tags/快捷键/" term="快捷键"/>
     <category scheme="http://iefoay.cn/categories/开发工具/" term="开发工具"/>
   </entry>
   <entry>

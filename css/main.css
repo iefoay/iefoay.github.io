@@ -34,8 +34,8 @@ figure.highlight table td {
 #gotop{
   display:none;
   position:fixed;
-  width:53px;
-  height:53px;
+  width:40px;
+  height:40px;
   overflow:hidden;
   right:10px;
   bottom:50px;
@@ -43,8 +43,8 @@ figure.highlight table td {
   border-radius:8px;
   color:#fff;
   opacity: .8;
-  background-image: url(/img/lanren_top.png);
+  background-image: url(/img/to-top.png);
 }
-#gotop:hover{
+/* #gotop:hover{
   background-position: -70px 0;
-}
+} */
